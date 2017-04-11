@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://lordsk.github.io/post/welcome/</loc>
+    <lastmod>2017-04-11T19:05:28+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lordsk.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lordsk.github.io/</loc>
+    <lastmod>2017-04-11T19:05:28+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lordsk.github.io/post/</loc>
+    <lastmod>2017-04-11T19:05:28+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lordsk.github.io/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LordSk&#39;s blog</title>
+    <link>https://lordsk.github.io/</link>
+    <description>Recent content on LordSk&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 Apr 2017 19:05:28 +0200</lastBuildDate>
+    
+	<atom:link href="https://lordsk.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>welcome</title>
+      <link>https://lordsk.github.io/post/welcome/</link>
+      <pubDate>Tue, 11 Apr 2017 19:05:28 +0200</pubDate>
+      
+      <guid>https://lordsk.github.io/post/welcome/</guid>
+      <description>Welcome. This is a test post.</description>
+    </item>
+    
+  </channel>
+</rss>
