@@ -6,10 +6,19 @@
     <description>Recent content in Posts on LordSk&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Apr 2017 19:05:28 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 03 Apr 2018 20:08:50 +0200</lastBuildDate>
     
 	<atom:link href="https://lordsk.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Neuroevolution: the basics</title>
+      <link>https://lordsk.github.io/post/learning_neuroevolution_part_1/</link>
+      <pubDate>Tue, 03 Apr 2018 20:08:50 +0200</pubDate>
+      
+      <guid>https://lordsk.github.io/post/learning_neuroevolution_part_1/</guid>
+      <description>Ever since I heard about neural networks I wanted to learn how they work and how to use them. Today (deep) neural networks are being used in more and more domains, ranging from the popular self-driving vehicle system, to diverse uses in medicine or even speech recognition and synthesis. That trend is not going to stop anytime soon, which meant it was time for me to start my journey to understanding this new revolutionary tool.</description>
+    </item>
     
     <item>
       <title>welcome</title>

@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <title>welcome </title>
+ <title>Neuroevolution: the basics </title>
 
 
 
@@ -144,12 +144,13 @@
       
   <div id="loop-container" class="loop-container">
     
+    <div class="post type-post status-publish format-standard has-post-thumbnail hentry category-design tag-design tag-standard-2 tag-tagalicious tag-travel entry full-without-featured odd excerpt-1">
 
-      <div class="post type-post status-publish format-standard hentry category-standard category-travel entry full-without-featured odd excerpt-1">
-
-        
+      <div class='featured-image lazy lazy-bg-image' data-background="https://lordsk.github.io/img/feedforward_nn.png">
+      </div>
+      
         <div class="entry-meta">
-          <span class="date">April 11</span>	<span> / </span>
+          <span class="date">April 03</span>	<span> / </span>
 
           <span class="author">
             
@@ -159,16 +160,54 @@
 
 
           
+          <span class="category">
+            <span> / </span>
+
+            <a href="/categories/AI">AI</a>
+          </span>
+          
 
 
         </div>
         <div class='entry-header'>
-          <h1 class='entry-title'> welcome</h1>
+          <h1 class='entry-title'> Neuroevolution: the basics</h1>
         </div>
         <div class="entry-container">
           <div class="entry-content">
             <article>
-              <p>Welcome. This is a test post.</p>
+              
+
+<p>Ever since I heard about <strong>neural networks</strong> I wanted to learn how they work and how to use them.
+Today (deep) neural networks are being used in more and more domains, ranging from the popular self-driving vehicle system, to diverse uses in medicine or even speech recognition and synthesis.
+That trend is not going to stop anytime soon, which meant it was time for me to start my journey to understanding this new revolutionary tool.</p>
+
+<h3 id="a-simple-neural-network">A simple neural network</h3>
+
+<p><img src="/img/feedforward_nn.png" alt="neural network" title="neural network" /></p>
+
+<p>The base concept is fairly simple. There are nodes (neurons) connected together. Green neurons are the input, gray are part of the &ldquo;hidden&rdquo; layers and red are the output.
+This particular type of network is called a <strong>feed forward deep neural network</strong>. <em>Feed forward</em> because it goes from left to right, feeding the input values then going through the network.
+<em>Deep</em> because it has more than one hidden layer. So how do you actually compute the values? For each neuron, you do:</p>
+
+<p><code>activate(input * weight + bias)</code></p>
+
+<p><strong>input</strong> comes from the previous layer or in the case of the first layer, it is the raw input. <strong>weight</strong> is the connection weight and <strong>bias</strong> is a single value added for mathematical reasons
+ (I encourage you to research why on your own). <strong>activate</strong> is the activation function. Functions like <code>sigmoid</code> or <code>tanh</code> are commonly used. The activation function allows us to construct
+ non-linear functions, a feed forward NN is basically a big function.</p>
+
+<h3 id="training-learning">Training / Learning</h3>
+
+<p>Now we know how a simple NN works, but we still have to tune it, or as it is often called, <em>train</em> it. Training in this example is adjusting each connection weight to get the desired result.
+<strong>Backpropagation</strong> is one way to do it but I wanted to explore another one first, <strong>neuroevolution</strong>.</p>
+
+<h3 id="neuroevolution">Neuroevolution</h3>
+
+<p><img src="/img/evolution_1.png" alt="neuroevolution" title="neuroevolution" /></p>
+
+<p>Neuroevolution bases itself upon biological evolution, <strong>survival of the fittest</strong>. We start with a random <strong>population</strong> of networks with each weight randomized, evaluate them and keep the best.
+We then proceed to <strong>mutate</strong> some of them (disrupting a/several connection weight) and repeat the process. This is the barebones principle of neuroevolution, pretty simple right?</p>
+
+<p>In the next article we&rsquo;ll expand on the concept and introduce you to my bird simulation, see you then!</p>
 
             </article>
           </div>
