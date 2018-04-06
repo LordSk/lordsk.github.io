@@ -184,13 +184,35 @@ That trend is not going to stop anytime soon, which meant it was time for me to 
 
 <p><img src="/img/feedforward_nn.png" alt="neural network" title="neural network" /></p>
 
-<p>The base concept is fairly simple. There are nodes (neurons) connected together. Green neurons are the input, gray are part of the &ldquo;hidden&rdquo; layers and red are the output.
-This particular type of network is called a <strong>feed forward deep neural network</strong>. <em>Feed forward</em> because it goes from left to right, feeding the input values then going through the network.
-<em>Deep</em> because it has more than one hidden layer. So how do you actually compute the values? For each neuron, you do:</p>
+<p>The base concept of a neural network is fairly simple. You first have the <strong>input</strong> nodes, which are your input values. These could be a position x,y,z,
+ pixel values or whatever you want depending on the issue to solve.
+Then comes a number of <strong>hidden</strong> layers, each connected to the previous layer. In the same manner, the <strong>output</strong> layer is at the end,
+ producing your output values. Each arrow represent a <strong>connection</strong> and has a weight associated to it.</p>
 
-<p><code>activate(input * weight + bias)</code></p>
+<p>This particular type of network is called a <strong>feed forward deep neural network</strong>. &ldquo;Feed forward&rdquo; because it goes from left to right, from the input layer to the output layer.
+&ldquo;Deep&rdquo; because it has more than one hidden layer. So how do you actually compute the values?</p>
 
-<p><strong>input</strong> comes from the previous layer or in the case of the first layer, it is the raw input. <strong>weight</strong> is the connection weight and <strong>bias</strong> is a single value added for mathematical reasons
+<ul>
+<li>First you set your input values (ex: 1.0, 0.5, -1.0, 0.2)</li>
+<li>Then for each layer (hidden and output) you do:</li>
+</ul>
+
+<p><code>activate(previous_layer_node_val x connection_weight + bias)</code></p>
+
+<p>or here is the expanded version:</p>
+
+<pre><code>foreach node:
+    val = bias
+    
+    for 0..prev_layer_node_count:
+        val = val + prev_layer_node_val[i] * connection_weight[i]
+    end
+    
+    val = activate(val)
+end
+</code></pre>
+
+<p><strong>previous_layer_node_val</strong> are the node values of the previous layer. <strong>connection_weight</strong> is the connection weight matrix and <strong>bias</strong> is a single value added for mathematical reasons
  (I encourage you to research why on your own). <strong>activate</strong> is the activation function. Functions like <code>sigmoid</code> or <code>tanh</code> are commonly used. The activation function allows us to construct
  non-linear functions, a feed forward NN is basically a big function.</p>
 
