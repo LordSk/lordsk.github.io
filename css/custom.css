@@ -2,3 +2,8 @@
 article img {
 	max-width: 100%;
 }
+
+#disqus_thread {
+    width: 100%;
+	padding: 0;
+}
