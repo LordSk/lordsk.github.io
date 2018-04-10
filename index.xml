@@ -6,10 +6,20 @@
     <description>Recent content on LordSk&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Apr 2018 20:08:50 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 09 Apr 2018 16:41:44 +0200</lastBuildDate>
     
 	<atom:link href="https://lordsk.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Neuroevolution: fitness and birds</title>
+      <link>https://lordsk.github.io/post/learning_neuroevolution_part_2/</link>
+      <pubDate>Mon, 09 Apr 2018 16:41:44 +0200</pubDate>
+      
+      <guid>https://lordsk.github.io/post/learning_neuroevolution_part_2/</guid>
+      <description>Last time we established what the basic concept of neuroevolution is and I used a simple diagram to illustrate it. That diagram is actually slightly false. For simplification I omitted how we repopulate after selecting only the fittest specimen. Most of the time, a type of crossover technique is used, but we could also simply clone the better specimen. Here is the fixed version.
+I will now go over each step in more details and explain a few techniques I employed for each of them.</description>
+    </item>
     
     <item>
       <title>Neuroevolution: the basics</title>
