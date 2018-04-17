@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <title>Neuroevolution: fitness and birds </title>
+ <title>Neuroevolution: bird simulation </title>
 
 
 
@@ -144,11 +144,11 @@
     
     <div class="post type-post status-publish format-standard has-post-thumbnail hentry category-design tag-design tag-standard-2 tag-tagalicious tag-travel entry full-without-featured odd excerpt-1">
 
-      <div class='featured-image lazy lazy-bg-image' data-background="https://lordsk.github.io/img/burds_neat_1.png">
+      <div class='featured-image lazy lazy-bg-image' data-background="https://lordsk.github.io/img/burds_1.jpg">
       </div>
       
         <div class="entry-meta">
-          <span class="date">April 09</span>	<span> / </span>
+          <span class="date">April 17</span>	<span> / </span>
 
           <span class="author">
             
@@ -168,69 +168,77 @@
 
         </div>
         <div class='entry-header'>
-          <h1 class='entry-title'> Neuroevolution: fitness and birds</h1>
+          <h1 class='entry-title'> Neuroevolution: bird simulation</h1>
         </div>
         <div class="entry-container">
           <div class="entry-content">
             <article>
               
 
-<p>Last time we established what the basic concept of <strong>neuroevolution</strong> is and I used a simple diagram to illustrate it.
-That diagram is actually slightly false. For simplification I omitted how we repopulate after selecting only the fittest specimen.
-Most of the time, a type of <strong>crossover</strong> technique is used, but we could also simply clone the better specimen.
-Here is the fixed version.</p>
-
-<p><img src="/img/neuroevolution_2.png" alt="neuroevolution2" title="neuroevolution2" /></p>
-
-<p>I will now go over each step in more details and explain a few techniques I employed for each of them.</p>
-
-<h3 id="evaluation-fitness">Evaluation / Fitness</h3>
-
-<p>First is the evaluation step. We run our network population (forward propagation) then calculate the <strong>fitness</strong> achieved by each NN.
-Fitness is an arbitrarily computed number representing how well a specimen did during its simulated lifetime. Here is a example:</p>
-
-<iframe src='https://gfycat.com/ifr/ReadyAmpleEider' frameborder='0' scrolling='no' width='690' height='248' allowfullscreen></iframe>
-
-<p>I&rsquo;m sure most of you are familiar with this little game. The goal is simple, go as far <strong>right</strong> as you can.
-The fitness is then <strong>how far right we went before dying</strong> (the top right score on the video). In this case fitness is easy grasp as a concept and thus easy to compute.
-However as your problem gets harder to resolve so will the fitness to compute. This is arguably the most important cog in our machine. A bad fitness function will render the system
-unable to evolve NNs properly or slow down the evolution by a lot. I will explain more when presenting the project I applied neuroevolution to.</p>
-
-<h3 id="selection">Selection</h3>
-
-<p>We now have our criteria for choosing the best specimen. There are several means of <strong>parent</strong> selection. We can sort NNs by fitness and eliminate the worst 50% and that would work.
-Yet I found using a more random method yield better results. My favorite was <strong>selection tournament</strong>.
-You pit specimen against random opponents multiple times and the victor becomes a parent (the best fitness wins). <strong>Selection roulette</strong> is very good as well.
-Imagine a long band with all the fitnesses added up one after the other. Where you land on the band determines the parent. Bigger fitnesses have a lot more chance to be landed on,
-while still leaving a chance for a low scoring specimen.</p>
-
-<p><img src="/img/selection_roulette.png" alt="selection roulette" title="selection roulette" /></p>
-
-<h3 id="crossover">Crossover</h3>
-
-<p><strong>Crossover</strong> is the mating part, mixing two parents to produce a &ldquo;child&rdquo;. There are a lot of ways to do this as well. Some choose to use a genome model, assigning genes to specimen and converting them
-back to weight values or even different neuron topologies (Neuroevolution is also referred as <strong>Genetic algorithm</strong>). I personally didn&rsquo;t go down that path and stuck with weights instead.
-Here are two examples of crossover techniques.</p>
-
-<p><img src="/img/crossover_1.png" alt="crossover" title="crossover" /></p>
-
-<p><em>A,B,C are gene letters, but they could also be each connection weight value</em></p>
-
-<h3 id="mutation">Mutation</h3>
-
-<p>Finally, <strong>mutation</strong>. Mutation, in our case, will alter/reset one or more connection weight depending on the connection rate. We have to fine tune this rate in order to have a correct evolution system.
-Too much mutation leads to randomness and no refining, too little will considerably slow down the process. We may also choose to keep a few specimen from mutating
-in order to not lose the best solution in the next generation.</p>
+<p>We now know how to train feed forward neural networks through evolution. Let&rsquo;s see how it fairs in a &ldquo;real&rdquo; environment.</p>
 
 <h3 id="burds">Burds</h3>
 
-<p>It is time to put all this theory into practice. I created a little simulation where 2D birds teach themselves how to fly. Here is a sneak peek,
-I will talk more about it in the next post, see you then!</p>
+<p>I created a little simulation where 2D birds try to manoeuvre in the air in order to eat apples. They can flap their wings (moving them forward), turn left, right and &ldquo;brake&rdquo; to some extent
+(this makes much more sense in motion, see video below). They have 10 seconds to reach the next apple. Upon reaching it, their lifetime is reset to 10 seconds. If they touch the ground they die.</p>
 
-<div style='position:relative;padding-bottom:54%'>
-	<iframe src='https://gfycat.com/ifr/reasonableofficialaardwolf' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0' allowfullscreen>
-	</iframe>
-</div>
+<h3 id="brain">Brain</h3>
+
+<p>Here is the very simple NN topology I used.</p>
+
+<p><img src="/img/burd_nn.png" alt="burd NN" title="burd NN" /></p>
+
+<p>A <strong>6x4x4</strong> fully connected feed forward NN.</p>
+
+<h4 id="input">Input</h4>
+
+<ul>
+<li><strong>offsetX</strong>/<strong>offsetY</strong> is the relative distance between the next apple and the bird.</li>
+<li><strong>velocityX</strong>/<strong>velocityY</strong> is the velocity vector of the bird.</li>
+<li><strong>angle</strong> is the orientation of the bird.</li>
+<li><strong>canFlap</strong> is either 1 or 0 depending of the flap cooldown.</li>
+</ul>
+
+<h4 id="output">Output</h4>
+
+<ul>
+<li><strong>turnLeft</strong>/<strong>turnRight</strong> will rotate the bird left or right.</li>
+<li><strong>flap</strong> will make the bird flap if it can.</li>
+<li><strong>brake</strong> will make the bird slow down.</li>
+</ul>
+
+<h3 id="fitness-function">Fitness function</h3>
+
+<p>Now what is the fitness function? The objective here is to <strong>eat apples</strong>, so</p>
+
+<p><code>fitness = appleEatenCount</code></p>
+
+<p>makes sense. One bird flying in a random direction will eventually hit and apple leading to more
+and more birds reaching the first apple. The cycle repeats for the next apple and so on. This would, after a very long time, converge to the solution we want, eating all the apples.
+But we can do better than that, much better in fact. We can start by taking <strong>the distance to the next apple</strong> in account. At any point t the fitness function then becomes</p>
+
+<p><code>fitness = appleEatenCount + 1/distanceToNextApple</code></p>
+
+<p>The closer a bird is to the next apple, the more fit it is. However birds naturally will move in a curved manner, getting farther to the next apple before getting closer.
+This function only rewards getting closer which is not ultimately what we want. In the end here is the code I settled on.</p>
+
+<pre><code>distFactor = 1.0 - (min(distance(birdPos, applePos), 2000) / 2000.0) // 0.0 -&gt; 1.0
+healthFactor = birdHealth / HEALTH_MAX
+
+// fitness accumulation every frame
+fitnessAcc += (healthFactor + distFactor * distFactor) * FRAME_DT
+fitness = fitnessAcc
+fitness += fitness * 0.1 * appleEatenCount
+</code></pre>
+
+<p>I won&rsquo;t go too much into details, but this function rewards staying close to the next apple, being healthy (and therefore quick) and of course eating apples.
+So finally, here is the result.</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/DlfPMHCaD90" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0" title="YouTube Video"></iframe>
+ </div>
+
 
             </article>
           </div>

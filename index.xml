@@ -6,10 +6,20 @@
     <description>Recent content on LordSk&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Apr 2018 16:41:44 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 17 Apr 2018 13:23:11 +0200</lastBuildDate>
     
 	<atom:link href="https://lordsk.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Neuroevolution: bird simulation</title>
+      <link>https://lordsk.github.io/post/learning_neuroevolution_part_3/</link>
+      <pubDate>Tue, 17 Apr 2018 13:23:11 +0200</pubDate>
+      
+      <guid>https://lordsk.github.io/post/learning_neuroevolution_part_3/</guid>
+      <description>We now know how to train feed forward neural networks through evolution. Let&amp;rsquo;s see how it fairs in a &amp;ldquo;real&amp;rdquo; environment.
+Burds I created a little simulation where 2D birds try to manoeuvre in the air in order to eat apples. They can flap their wings (moving them forward), turn left, right and &amp;ldquo;brake&amp;rdquo; to some extent (this makes much more sense in motion, see video below). They have 10 seconds to reach the next apple.</description>
+    </item>
     
     <item>
       <title>Neuroevolution: fitness and birds</title>
