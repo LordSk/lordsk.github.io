@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cvs on LordSk&#39;s blog</title>
+    <link>https://lordsk.github.io/cv/</link>
+    <description>Recent content in Cvs on LordSk&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://lordsk.github.io/cv/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Développeur natif &amp; web</title>
+      <link>https://lordsk.github.io/cv/cv_fr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lordsk.github.io/cv/cv_fr/</guid>
+      <description>Français / English
+Compétences Développement natif
+ C/C++ 5+ années expérience 3D graphiques (OpenGL) Optimisation (mémoire, multithreading, SIMD)  Développement web
+ PHP, Javascript Application Android (Java)  Reverse Engineering
+ Assembleur (x86/x86_64) Reversing de programme et hacking Code injection, function hooking x64dbg, IDA, Wireshark  Projets 2018 (fini) - Apprendre aux oiseaux comment voler à l&amp;rsquo;aide de Neuroevolution
+ Simulation 2D oiseaux (C++/OpenGL) Feed-forward neural network Algorithme d&amp;rsquo;évolution Page du projet  2018 (actif) - 0xed, éditeur/viewer de données</description>
+    </item>
+    
+    <item>
+      <title>Software developer</title>
+      <link>https://lordsk.github.io/cv/cv_en/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lordsk.github.io/cv/cv_en/</guid>
+      <description>Français / English
+Skills Native software development
+ C/C++ 5+ years of experience 3D graphics (OpenGL) Optimization (memory usage, multithreading, SIMD)  Web development
+ PHP, Javascript Android application (Java)  Reverse Engineering
+ Assembly knowledge (x86/x86_64) Program reversing and hacking Code injection, function hooking x64dbg, IDA, Wireshark  Projects 2018 (done) - Teaching birds how to fly with Neuroevolution
+ 2D bird simulation (C++/OpenGL) Feed-forward neural network implementation Evolution algorithm implementation Project page  2018 (active) - 0xed, an hexadecimal data viewer/editor</description>
+    </item>
+    
+  </channel>
+</rss>

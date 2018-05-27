@@ -7,3 +7,21 @@ article img {
     width: 100%;
 	padding: 0;
 }
+
+.cv-body h3 {
+	padding-left: 10px;
+	color: white;
+	background: #1b1b1b;
+}
+
+.cv-body p {
+	margin-bottom: 0;
+}
+
+.cv-body ul {
+	margin-top: 0.5em;
+}
+
+.cv-body article a {
+	color: #0058ff;
+}
