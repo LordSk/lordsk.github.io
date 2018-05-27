@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Resacred on LordSk&#39;s blog</title>
+    <link>https://lordsk.github.io/categories/resacred/</link>
+    <description>Recent content in Resacred on LordSk&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Dec 2017 00:06:25 +0100</lastBuildDate>
+    
+	<atom:link href="https://lordsk.github.io/categories/resacred/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Remaking Sacred, part 1: Introduction and textures</title>
+      <link>https://lordsk.github.io/post/resacred_part_1/</link>
+      <pubDate>Tue, 05 Dec 2017 00:06:25 +0100</pubDate>
+      
+      <guid>https://lordsk.github.io/post/resacred_part_1/</guid>
+      <description>Introduction Sacred is an old 2004 game, a RPG similar to Diablo. I remember getting it for free at the time, attached to my PC Gamer magazine. It was my first real RPG game I ever got my hands on, and it was amazing. I have many great memories playing this game, overcoming difficult enemies, completing quests, and dropping loot! Oh the satisfaction.
+The year is now 2017 and I wanted to revisit Sacred, many years later.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -65,9 +65,9 @@ body {
   font-size: 100%;
   margin: 0;
   padding: 0;
-  font-family: "raleway", sans-serif;
+  font-family: "fonts/Montserrat-Medium.ttf", sans-serif;
   line-height: 1.5;
-  color: #4d4d4d;
+  color: #2d2d2d;
   background: #222;
   -webkit-font-smoothing: antialiased;
   word-wrap: break-word;
@@ -118,7 +118,7 @@ article a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "raleway", sans-serif;
+  font-family: "Helvetica", "fonts/Montserrat-Medium.ttf", sans-serif;
   margin: 0;
   padding: 0;
   font-weight: 400;
@@ -1215,7 +1215,7 @@ a img {
   }
 
   .entry-header h1 {
-    font-size: 4.25em;
+    font-size: 2.5em;
     line-height: 1.06;
   }
 
