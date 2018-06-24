@@ -25,3 +25,13 @@ article img {
 .cv-body article a {
 	color: #0058ff;
 }
+
+.excerpt-header:after, .entry-header:after {
+    width: 100%;
+}
+
+@media all and (min-width: 75em) {
+  .entry-container {
+    padding: 0 5% 0 20%;
+  }
+}
