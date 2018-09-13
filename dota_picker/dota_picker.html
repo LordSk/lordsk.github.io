@@ -8,10 +8,10 @@
 
 <body>
     <div class="head">
-        <h1>Filter</h1>
-        <input type="text" class="input_filter" value="" autocomplete="off"/>
         <h1>Selected heroes</h1>
         <div class="selected_hero_list"></div>
+        <h1>Filter</h1>
+        <input type="text" class="input_filter" value="" autocomplete="off"/>
         <ul class="tag_select">
             <li>Carry</li>
             <li>Support</li>
@@ -24,6 +24,7 @@
         </ul>
     </div>
 
+    <div class="content">
     <div class="hero_list">
         <div class="hero_button" name="earthshaker" search="Earthshaker" roles="Support Initiator Disabler Nuker"><img src="res/earthshaker.png"></div>
         <div class="hero_button" name="sven" search="Sven" roles="Carry Disabler Initiator Durable Nuker"><img src="res/sven.png"></div>
@@ -141,6 +142,25 @@
         <div class="hero_button" name="visage" search="Visage" roles="Support Nuker Durable Disabler Pusher"><img src="res/visage.png"></div>
         <div class="hero_button" name="winter_wyvern" search="Winter Wyvern" roles="Support Disabler Nuker"><img src="res/winter_wyvern.png"></div>
         <div class="hero_button" name="grimstroke" search="Grimstroke" roles="Support Nuker Disabler Escape"><img src="res/grimstroke.png"></div>
+    </div>
+    <div class="lineup_stats">
+        <h3>Carry</h3>
+        <div class="progress_bar" val="0" id="pb_Carry"></div>
+        <h3>Support</h3>
+        <div class="progress_bar" val="0" id="pb_Support"></div>
+        <h3>Nuker</h3>
+        <div class="progress_bar" val="0" id="pb_Nuker"></div>
+        <h3>Disabler</h3>
+        <div class="progress_bar" val="0" id="pb_Disabler"></div>
+        <h3>Initiator</h3>
+        <div class="progress_bar" val="0" id="pb_Initiator"></div>
+        <h3>Pusher</h3>
+        <div class="progress_bar" val="0" id="pb_Pusher"></div>
+        <h3>Escape</h3>
+        <div class="progress_bar" val="0" id="pb_Escape"></div>
+        <h3>Durable</h3>
+        <div class="progress_bar" val="0" id="pb_Durable"></div>
+    </div>
     </div>
 </body>
 

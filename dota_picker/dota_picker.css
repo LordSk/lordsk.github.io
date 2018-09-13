@@ -11,31 +11,43 @@ h1 {
     color: #ffffff;
     margin-top: 5px;
     margin-bottom: 5px;
+    font-size: 1.6em;
+    padding-left: 7px;
 }
 
 .head {
     margin: 10px;
 }
 
+.content {
+    display: flex;
+    margin: 10px;
+    margin-top: 20px;
+}
+
 .hero_list {
+    flex: 75%;
     display: flex;
     flex-wrap: wrap;
-    margin: 10px;
-    margin-top: 40px;
     user-select: none;
 }
 
 .selected_hero_list {
     display: flex;
+    margin-bottom: 25px;
 }
 
 .hero_button {
     margin: 0;
     padding: 0;
     display: inline-block;
-    width: 127px;
     background: black;
-    border: 2px solid black;
+    border: 1px solid black;
+}
+
+.hero_button img {
+    width: 95px;
+    height: 53px;
 }
 
 .hero_button.grayed img {
@@ -44,12 +56,22 @@ h1 {
 
 .hero_list .hero_button:not(.grayed):hover {
    cursor: pointer;
-   border-color: green;
+   border-color: #0081ff;
+   background: #0081ff;
 }
+
+.hero_list .hero_button:not(.grayed):hover img {
+    opacity: 0.5;
+ }
 
 .selected_hero_list .hero_button:hover {
     cursor: pointer;
     border-color: red;
+    background: red;
+ }
+
+ .selected_hero_list .hero_button:hover img {
+    opacity: 0.5;
  }
 
 .hero_button img {
@@ -57,8 +79,8 @@ h1 {
 }
 
 .selected_hero_list {
-    width: 655px;
-    height: 75px;
+    width: 485px;
+    height: 55px;
     background: #4d4d4d;
 }
 
@@ -76,11 +98,11 @@ ul.tag_select {
 
 ul.tag_select li {
     display: inline-block;
-    padding: 15px;
-    font-size: 1.5em;
+    padding: 10px;
+    font-size: 1.2em;
     background: #7a7a7a;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 ul.tag_select li:hover {
@@ -92,4 +114,28 @@ ul.tag_select li:hover {
 ul.tag_select li.selected {
     background: #004ad3;
     color: #ffffff;
+}
+
+.lineup_stats {
+    flex: 25%;
+}
+
+.lineup_stats h3 {
+    margin: 5px;
+    color: #303030;
+}
+
+.progress_bar {
+    width: 100%;
+    height: 20px;
+    border-radius: 7px;
+    background: #474747;
+    overflow: hidden;
+    box-shadow: inset 0 0 10px;
+}
+
+.progress_bar .bar {
+    width: 0%;
+    height: 100%;
+    background: rgb(0, 89, 255);
 }

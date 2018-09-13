@@ -1,5 +1,10 @@
 //
 
+// make progress bars
+$('.progress_bar').each(function() {
+    $(this).append('<div class="bar"></div>');
+});
+
 const roles = {
     Carry: 0,
     Support: 0,
@@ -71,9 +76,25 @@ $('div.hero_list .hero_button').click(function() {
 function updateSelectedList()
 {
     var html = '';
+    var roleCount = {
+        Carry: 0,
+        Support: 0,
+        Nuker: 0,
+        Disabler: 0,
+        Initiator: 0,
+        Pusher: 0,
+        Escape: 0,
+        Durable: 0,
+    };
+
     for(var i = 0; i < selected_list.length; i += 1) {
         if(!hero_list.hasOwnProperty(selected_list[i])) continue;
-        html += '<div class="hero_button"><img src="' + hero_list[selected_list[i]].src + '"></div>';
+        var hero = hero_list[selected_list[i]];
+        html += '<div class="hero_button"><img src="' + hero.src + '"></div>';
+
+        for(var r in hero.roles) {
+            roleCount[r] += hero.roles[r];
+        }
     }
     div_selectedList.html(html);
 
@@ -85,7 +106,16 @@ function updateSelectedList()
         }
     });
 
+    // save state in url
     history.pushState(null, '', '?heroes=' + selected_list.join(','));
+
+    for(var r in roleCount) {
+        $('.progress_bar#pb_' + r + ' .bar').each(function() {
+            var val = roleCount[r] / 5.0 * 100.0;
+            $(this).attr('val', val);
+            $(this).css('width', val + '%');
+        });
+    }
 }
 
 
