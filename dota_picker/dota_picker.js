@@ -53,9 +53,8 @@ $('div.hero_list .hero_button').each(function() {
 });
 
 // load heroes from url
-console.log(window.location.search);
 var a = window.location.search.split('=');
-if(a[0] == '?heroes') {
+if(a[0] == '?heroes' && a[1].length > 0) {
     var urlHeroList = a[1].split(',');
 
     selected_list = selected_list.concat(urlHeroList);
@@ -73,6 +72,7 @@ function updateSelectedList()
 {
     var html = '';
     for(var i = 0; i < selected_list.length; i += 1) {
+        if(!hero_list.hasOwnProperty(selected_list[i])) continue;
         html += '<div class="hero_button"><img src="' + hero_list[selected_list[i]].src + '"></div>';
     }
     div_selectedList.html(html);
