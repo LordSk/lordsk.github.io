@@ -2,7 +2,10 @@
 
 import requests
 from bs4 import BeautifulSoup
+import json
 
+f = open('res/heropickerdata.json')
+heropickerdata = json.loads(f.read())
 
 r = requests.get('http://www.dota2.com/heroes')
 soup = BeautifulSoup(r.text, 'html.parser')
@@ -17,9 +20,16 @@ for src in img_sources:
     name = src.split('/')[-1].split('?')[0]
     name = name[:-12]
     filename = name + '.png'
-    json += '<div class="hero_button" name="' + name + '"><img src="res/' + filename + '"></div>\n'
 
-    print(filename)
+    heroData = heropickerdata[name]
+    actualName = heroData['name']
+    rolesStr = ' '.join(heroData['roles'])
+
+    print(filename, actualName, rolesStr)
+
+    json += '<div class="hero_button" name="' + name + '" search="' + actualName
+    json += '" roles="' + rolesStr + '"><img src="res/' + filename + '"></div>\n'
+
     #r = requests.get(src)
     #f = open('res/' + filename, 'bw')
     #f.write(r.content)

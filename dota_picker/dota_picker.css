@@ -25,6 +25,10 @@ h1 {
     user-select: none;
 }
 
+.selected_hero_list {
+    display: flex;
+}
+
 .hero_button {
     margin: 0;
     padding: 0;
@@ -60,4 +64,32 @@ h1 {
 
 .input_filter, .button_clear {
     font-size: 2em;
+}
+
+ul.tag_select {
+    user-select: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+}
+
+ul.tag_select li {
+    display: inline-block;
+    padding: 15px;
+    font-size: 1.5em;
+    background: #7a7a7a;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+ul.tag_select li:hover {
+    background: #002569;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+ul.tag_select li.selected {
+    background: #004ad3;
+    color: #ffffff;
 }

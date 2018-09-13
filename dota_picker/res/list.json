@@ -1,116 +1,116 @@
-<div class="hero_button" name="earthshaker"><img src="res/earthshaker.png"></div>
-<div class="hero_button" name="sven"><img src="res/sven.png"></div>
-<div class="hero_button" name="tiny"><img src="res/tiny.png"></div>
-<div class="hero_button" name="kunkka"><img src="res/kunkka.png"></div>
-<div class="hero_button" name="beastmaster"><img src="res/beastmaster.png"></div>
-<div class="hero_button" name="dragon_knight"><img src="res/dragon_knight.png"></div>
-<div class="hero_button" name="rattletrap"><img src="res/rattletrap.png"></div>
-<div class="hero_button" name="omniknight"><img src="res/omniknight.png"></div>
-<div class="hero_button" name="huskar"><img src="res/huskar.png"></div>
-<div class="hero_button" name="alchemist"><img src="res/alchemist.png"></div>
-<div class="hero_button" name="brewmaster"><img src="res/brewmaster.png"></div>
-<div class="hero_button" name="treant"><img src="res/treant.png"></div>
-<div class="hero_button" name="wisp"><img src="res/wisp.png"></div>
-<div class="hero_button" name="centaur"><img src="res/centaur.png"></div>
-<div class="hero_button" name="shredder"><img src="res/shredder.png"></div>
-<div class="hero_button" name="bristleback"><img src="res/bristleback.png"></div>
-<div class="hero_button" name="tusk"><img src="res/tusk.png"></div>
-<div class="hero_button" name="elder_titan"><img src="res/elder_titan.png"></div>
-<div class="hero_button" name="legion_commander"><img src="res/legion_commander.png"></div>
-<div class="hero_button" name="earth_spirit"><img src="res/earth_spirit.png"></div>
-<div class="hero_button" name="phoenix"><img src="res/phoenix.png"></div>
-<div class="hero_button" name="antimage"><img src="res/antimage.png"></div>
-<div class="hero_button" name="drow_ranger"><img src="res/drow_ranger.png"></div>
-<div class="hero_button" name="juggernaut"><img src="res/juggernaut.png"></div>
-<div class="hero_button" name="mirana"><img src="res/mirana.png"></div>
-<div class="hero_button" name="morphling"><img src="res/morphling.png"></div>
-<div class="hero_button" name="phantom_lancer"><img src="res/phantom_lancer.png"></div>
-<div class="hero_button" name="vengefulspirit"><img src="res/vengefulspirit.png"></div>
-<div class="hero_button" name="riki"><img src="res/riki.png"></div>
-<div class="hero_button" name="sniper"><img src="res/sniper.png"></div>
-<div class="hero_button" name="templar_assassin"><img src="res/templar_assassin.png"></div>
-<div class="hero_button" name="luna"><img src="res/luna.png"></div>
-<div class="hero_button" name="bounty_hunter"><img src="res/bounty_hunter.png"></div>
-<div class="hero_button" name="ursa"><img src="res/ursa.png"></div>
-<div class="hero_button" name="gyrocopter"><img src="res/gyrocopter.png"></div>
-<div class="hero_button" name="lone_druid"><img src="res/lone_druid.png"></div>
-<div class="hero_button" name="naga_siren"><img src="res/naga_siren.png"></div>
-<div class="hero_button" name="troll_warlord"><img src="res/troll_warlord.png"></div>
-<div class="hero_button" name="ember_spirit"><img src="res/ember_spirit.png"></div>
-<div class="hero_button" name="monkey_king"><img src="res/monkey_king.png"></div>
-<div class="hero_button" name="pangolier"><img src="res/pangolier.png"></div>
-<div class="hero_button" name="crystal_maiden"><img src="res/crystal_maiden.png"></div>
-<div class="hero_button" name="puck"><img src="res/puck.png"></div>
-<div class="hero_button" name="storm_spirit"><img src="res/storm_spirit.png"></div>
-<div class="hero_button" name="windrunner"><img src="res/windrunner.png"></div>
-<div class="hero_button" name="zuus"><img src="res/zuus.png"></div>
-<div class="hero_button" name="lina"><img src="res/lina.png"></div>
-<div class="hero_button" name="shadow_shaman"><img src="res/shadow_shaman.png"></div>
-<div class="hero_button" name="tinker"><img src="res/tinker.png"></div>
-<div class="hero_button" name="furion"><img src="res/furion.png"></div>
-<div class="hero_button" name="enchantress"><img src="res/enchantress.png"></div>
-<div class="hero_button" name="jakiro"><img src="res/jakiro.png"></div>
-<div class="hero_button" name="chen"><img src="res/chen.png"></div>
-<div class="hero_button" name="silencer"><img src="res/silencer.png"></div>
-<div class="hero_button" name="ogre_magi"><img src="res/ogre_magi.png"></div>
-<div class="hero_button" name="rubick"><img src="res/rubick.png"></div>
-<div class="hero_button" name="disruptor"><img src="res/disruptor.png"></div>
-<div class="hero_button" name="keeper_of_the_light"><img src="res/keeper_of_the_light.png"></div>
-<div class="hero_button" name="skywrath_mage"><img src="res/skywrath_mage.png"></div>
-<div class="hero_button" name="oracle"><img src="res/oracle.png"></div>
-<div class="hero_button" name="techies"><img src="res/techies.png"></div>
-<div class="hero_button" name="dark_willow"><img src="res/dark_willow.png"></div>
-<div class="hero_button" name="axe"><img src="res/axe.png"></div>
-<div class="hero_button" name="pudge"><img src="res/pudge.png"></div>
-<div class="hero_button" name="sand_king"><img src="res/sand_king.png"></div>
-<div class="hero_button" name="slardar"><img src="res/slardar.png"></div>
-<div class="hero_button" name="tidehunter"><img src="res/tidehunter.png"></div>
-<div class="hero_button" name="skeleton_king"><img src="res/skeleton_king.png"></div>
-<div class="hero_button" name="life_stealer"><img src="res/life_stealer.png"></div>
-<div class="hero_button" name="night_stalker"><img src="res/night_stalker.png"></div>
-<div class="hero_button" name="doom_bringer"><img src="res/doom_bringer.png"></div>
-<div class="hero_button" name="spirit_breaker"><img src="res/spirit_breaker.png"></div>
-<div class="hero_button" name="lycan"><img src="res/lycan.png"></div>
-<div class="hero_button" name="chaos_knight"><img src="res/chaos_knight.png"></div>
-<div class="hero_button" name="undying"><img src="res/undying.png"></div>
-<div class="hero_button" name="magnataur"><img src="res/magnataur.png"></div>
-<div class="hero_button" name="abaddon"><img src="res/abaddon.png"></div>
-<div class="hero_button" name="abyssal_underlord"><img src="res/abyssal_underlord.png"></div>
-<div class="hero_button" name="bloodseeker"><img src="res/bloodseeker.png"></div>
-<div class="hero_button" name="nevermore"><img src="res/nevermore.png"></div>
-<div class="hero_button" name="razor"><img src="res/razor.png"></div>
-<div class="hero_button" name="venomancer"><img src="res/venomancer.png"></div>
-<div class="hero_button" name="faceless_void"><img src="res/faceless_void.png"></div>
-<div class="hero_button" name="phantom_assassin"><img src="res/phantom_assassin.png"></div>
-<div class="hero_button" name="viper"><img src="res/viper.png"></div>
-<div class="hero_button" name="clinkz"><img src="res/clinkz.png"></div>
-<div class="hero_button" name="broodmother"><img src="res/broodmother.png"></div>
-<div class="hero_button" name="weaver"><img src="res/weaver.png"></div>
-<div class="hero_button" name="spectre"><img src="res/spectre.png"></div>
-<div class="hero_button" name="meepo"><img src="res/meepo.png"></div>
-<div class="hero_button" name="nyx_assassin"><img src="res/nyx_assassin.png"></div>
-<div class="hero_button" name="slark"><img src="res/slark.png"></div>
-<div class="hero_button" name="medusa"><img src="res/medusa.png"></div>
-<div class="hero_button" name="terrorblade"><img src="res/terrorblade.png"></div>
-<div class="hero_button" name="arc_warden"><img src="res/arc_warden.png"></div>
-<div class="hero_button" name="bane"><img src="res/bane.png"></div>
-<div class="hero_button" name="lich"><img src="res/lich.png"></div>
-<div class="hero_button" name="lion"><img src="res/lion.png"></div>
-<div class="hero_button" name="witch_doctor"><img src="res/witch_doctor.png"></div>
-<div class="hero_button" name="enigma"><img src="res/enigma.png"></div>
-<div class="hero_button" name="necrolyte"><img src="res/necrolyte.png"></div>
-<div class="hero_button" name="warlock"><img src="res/warlock.png"></div>
-<div class="hero_button" name="queenofpain"><img src="res/queenofpain.png"></div>
-<div class="hero_button" name="death_prophet"><img src="res/death_prophet.png"></div>
-<div class="hero_button" name="pugna"><img src="res/pugna.png"></div>
-<div class="hero_button" name="dazzle"><img src="res/dazzle.png"></div>
-<div class="hero_button" name="leshrac"><img src="res/leshrac.png"></div>
-<div class="hero_button" name="dark_seer"><img src="res/dark_seer.png"></div>
-<div class="hero_button" name="batrider"><img src="res/batrider.png"></div>
-<div class="hero_button" name="ancient_apparition"><img src="res/ancient_apparition.png"></div>
-<div class="hero_button" name="invoker"><img src="res/invoker.png"></div>
-<div class="hero_button" name="obsidian_destroyer"><img src="res/obsidian_destroyer.png"></div>
-<div class="hero_button" name="shadow_demon"><img src="res/shadow_demon.png"></div>
-<div class="hero_button" name="visage"><img src="res/visage.png"></div>
-<div class="hero_button" name="winter_wyvern"><img src="res/winter_wyvern.png"></div>
-<div class="hero_button" name="grimstroke"><img src="res/grimstroke.png"></div>
+<div class="hero_button" name="earthshaker" search="Earthshaker" roles="Support Initiator Disabler Nuker"><img src="res/earthshaker.png"></div>
+<div class="hero_button" name="sven" search="Sven" roles="Carry Disabler Initiator Durable Nuker"><img src="res/sven.png"></div>
+<div class="hero_button" name="tiny" search="Tiny" roles="Carry Nuker Pusher Initiator Durable Disabler"><img src="res/tiny.png"></div>
+<div class="hero_button" name="kunkka" search="Kunkka" roles="Carry Support Disabler Initiator Durable Nuker"><img src="res/kunkka.png"></div>
+<div class="hero_button" name="beastmaster" search="Beastmaster" roles="Initiator Disabler Durable Nuker"><img src="res/beastmaster.png"></div>
+<div class="hero_button" name="dragon_knight" search="Dragon Knight" roles="Carry Pusher Durable Disabler Initiator Nuker"><img src="res/dragon_knight.png"></div>
+<div class="hero_button" name="rattletrap" search="Clockwerk" roles="Initiator Disabler Durable Nuker"><img src="res/rattletrap.png"></div>
+<div class="hero_button" name="omniknight" search="Omniknight" roles="Support Durable Nuker"><img src="res/omniknight.png"></div>
+<div class="hero_button" name="huskar" search="Huskar" roles="Carry Durable Initiator"><img src="res/huskar.png"></div>
+<div class="hero_button" name="alchemist" search="Alchemist" roles="Carry Support Durable Disabler Initiator Nuker"><img src="res/alchemist.png"></div>
+<div class="hero_button" name="brewmaster" search="Brewmaster" roles="Carry Initiator Durable Disabler Nuker"><img src="res/brewmaster.png"></div>
+<div class="hero_button" name="treant" search="Treant Protector" roles="Support Initiator Durable Disabler Escape"><img src="res/treant.png"></div>
+<div class="hero_button" name="wisp" search="Io" roles="Support Escape Nuker"><img src="res/wisp.png"></div>
+<div class="hero_button" name="centaur" search="Centaur Warrunner" roles="Durable Initiator Disabler Nuker Escape"><img src="res/centaur.png"></div>
+<div class="hero_button" name="shredder" search="Timbersaw" roles="Nuker Durable Escape"><img src="res/shredder.png"></div>
+<div class="hero_button" name="bristleback" search="Bristleback" roles="Carry Durable Initiator Nuker"><img src="res/bristleback.png"></div>
+<div class="hero_button" name="tusk" search="Tusk" roles="Initiator Disabler Nuker"><img src="res/tusk.png"></div>
+<div class="hero_button" name="elder_titan" search="Elder Titan" roles="Initiator Disabler Nuker Durable"><img src="res/elder_titan.png"></div>
+<div class="hero_button" name="legion_commander" search="Legion Commander" roles="Carry Disabler Initiator Durable Nuker"><img src="res/legion_commander.png"></div>
+<div class="hero_button" name="earth_spirit" search="Earth Spirit" roles="Nuker Escape Disabler Initiator Durable"><img src="res/earth_spirit.png"></div>
+<div class="hero_button" name="phoenix" search="Phoenix" roles="Support Nuker Initiator Escape Disabler"><img src="res/phoenix.png"></div>
+<div class="hero_button" name="antimage" search="Anti-Mage" roles="Carry Escape Nuker"><img src="res/antimage.png"></div>
+<div class="hero_button" name="drow_ranger" search="Drow Ranger" roles="Carry Disabler Pusher"><img src="res/drow_ranger.png"></div>
+<div class="hero_button" name="juggernaut" search="Juggernaut" roles="Carry Pusher Escape"><img src="res/juggernaut.png"></div>
+<div class="hero_button" name="mirana" search="Mirana" roles="Carry Support Escape Nuker Disabler"><img src="res/mirana.png"></div>
+<div class="hero_button" name="morphling" search="Morphling" roles="Carry Escape Durable Nuker Disabler"><img src="res/morphling.png"></div>
+<div class="hero_button" name="phantom_lancer" search="Phantom Lancer" roles="Carry Escape Pusher Nuker"><img src="res/phantom_lancer.png"></div>
+<div class="hero_button" name="vengefulspirit" search="Vengeful Spirit" roles="Support Initiator Disabler Nuker Escape"><img src="res/vengefulspirit.png"></div>
+<div class="hero_button" name="riki" search="Riki" roles="Carry Escape Disabler"><img src="res/riki.png"></div>
+<div class="hero_button" name="sniper" search="Sniper" roles="Carry Nuker"><img src="res/sniper.png"></div>
+<div class="hero_button" name="templar_assassin" search="Templar Assassin" roles="Carry Escape"><img src="res/templar_assassin.png"></div>
+<div class="hero_button" name="luna" search="Luna" roles="Carry Nuker Pusher"><img src="res/luna.png"></div>
+<div class="hero_button" name="bounty_hunter" search="Bounty Hunter" roles="Escape Nuker"><img src="res/bounty_hunter.png"></div>
+<div class="hero_button" name="ursa" search="Ursa" roles="Carry Jungler Durable Disabler"><img src="res/ursa.png"></div>
+<div class="hero_button" name="gyrocopter" search="Gyrocopter" roles="Carry Nuker Disabler"><img src="res/gyrocopter.png"></div>
+<div class="hero_button" name="lone_druid" search="Lone Druid" roles="Carry Pusher Jungler Durable"><img src="res/lone_druid.png"></div>
+<div class="hero_button" name="naga_siren" search="Naga Siren" roles="Carry Support Pusher Disabler Initiator Escape"><img src="res/naga_siren.png"></div>
+<div class="hero_button" name="troll_warlord" search="Troll Warlord" roles="Carry Pusher Disabler Durable"><img src="res/troll_warlord.png"></div>
+<div class="hero_button" name="ember_spirit" search="Ember Spirit" roles="Carry Escape Nuker Disabler Initiator"><img src="res/ember_spirit.png"></div>
+<div class="hero_button" name="monkey_king" search="Monkey King" roles="Carry Escape Disabler Initiator"><img src="res/monkey_king.png"></div>
+<div class="hero_button" name="pangolier" search="Pangolier" roles="Carry Nuker Disabler Durable Escape Initiator"><img src="res/pangolier.png"></div>
+<div class="hero_button" name="crystal_maiden" search="Crystal Maiden" roles="Support Disabler Nuker Jungler"><img src="res/crystal_maiden.png"></div>
+<div class="hero_button" name="puck" search="Puck" roles="Initiator Disabler Escape Nuker"><img src="res/puck.png"></div>
+<div class="hero_button" name="storm_spirit" search="Storm Spirit" roles="Carry Escape Nuker Initiator Disabler"><img src="res/storm_spirit.png"></div>
+<div class="hero_button" name="windrunner" search="Windranger" roles="Carry Support Disabler Escape Nuker"><img src="res/windrunner.png"></div>
+<div class="hero_button" name="zuus" search="Zeus" roles="Nuker"><img src="res/zuus.png"></div>
+<div class="hero_button" name="lina" search="Lina" roles="Support Carry Nuker Disabler"><img src="res/lina.png"></div>
+<div class="hero_button" name="shadow_shaman" search="Shadow Shaman" roles="Support Pusher Disabler Nuker Initiator"><img src="res/shadow_shaman.png"></div>
+<div class="hero_button" name="tinker" search="Tinker" roles="Carry Nuker Pusher"><img src="res/tinker.png"></div>
+<div class="hero_button" name="furion" search="Nature's Prophet" roles="Carry Jungler Pusher Escape Nuker"><img src="res/furion.png"></div>
+<div class="hero_button" name="enchantress" search="Enchantress" roles="Support Jungler Pusher Durable Disabler"><img src="res/enchantress.png"></div>
+<div class="hero_button" name="jakiro" search="Jakiro" roles="Support Nuker Pusher Disabler"><img src="res/jakiro.png"></div>
+<div class="hero_button" name="chen" search="Chen" roles="Support Jungler Pusher"><img src="res/chen.png"></div>
+<div class="hero_button" name="silencer" search="Silencer" roles="Carry Support Disabler Initiator Nuker"><img src="res/silencer.png"></div>
+<div class="hero_button" name="ogre_magi" search="Ogre Magi" roles="Support Nuker Disabler Durable Initiator"><img src="res/ogre_magi.png"></div>
+<div class="hero_button" name="rubick" search="Rubick" roles="Support Disabler Nuker"><img src="res/rubick.png"></div>
+<div class="hero_button" name="disruptor" search="Disruptor" roles="Support Disabler Nuker Initiator"><img src="res/disruptor.png"></div>
+<div class="hero_button" name="keeper_of_the_light" search="Keeper of the Light" roles="Support Nuker Disabler Jungler"><img src="res/keeper_of_the_light.png"></div>
+<div class="hero_button" name="skywrath_mage" search="Skywrath Mage" roles="Support Nuker Disabler"><img src="res/skywrath_mage.png"></div>
+<div class="hero_button" name="oracle" search="Oracle" roles="Support Nuker Disabler Escape"><img src="res/oracle.png"></div>
+<div class="hero_button" name="techies" search="Techies" roles="Nuker Disabler"><img src="res/techies.png"></div>
+<div class="hero_button" name="dark_willow" search="Dark Willow" roles="Support Nuker Disabler Escape"><img src="res/dark_willow.png"></div>
+<div class="hero_button" name="axe" search="Axe" roles="Initiator Durable Disabler Jungler"><img src="res/axe.png"></div>
+<div class="hero_button" name="pudge" search="Pudge" roles="Disabler Initiator Durable Nuker"><img src="res/pudge.png"></div>
+<div class="hero_button" name="sand_king" search="Sand King" roles="Initiator Disabler Support Nuker Escape Jungler"><img src="res/sand_king.png"></div>
+<div class="hero_button" name="slardar" search="Slardar" roles="Carry Durable Initiator Disabler Escape"><img src="res/slardar.png"></div>
+<div class="hero_button" name="tidehunter" search="Tidehunter" roles="Initiator Durable Disabler Nuker"><img src="res/tidehunter.png"></div>
+<div class="hero_button" name="skeleton_king" search="Wraith King" roles="Carry Support Durable Disabler Initiator"><img src="res/skeleton_king.png"></div>
+<div class="hero_button" name="life_stealer" search="Lifestealer" roles="Carry Durable Jungler Escape Disabler"><img src="res/life_stealer.png"></div>
+<div class="hero_button" name="night_stalker" search="Night Stalker" roles="Carry Initiator Durable Disabler Nuker"><img src="res/night_stalker.png"></div>
+<div class="hero_button" name="doom_bringer" search="Doom" roles="Carry Disabler Initiator Durable Nuker"><img src="res/doom_bringer.png"></div>
+<div class="hero_button" name="spirit_breaker" search="Spirit Breaker" roles="Carry Initiator Disabler Durable Escape"><img src="res/spirit_breaker.png"></div>
+<div class="hero_button" name="lycan" search="Lycan" roles="Carry Pusher Jungler Durable Escape"><img src="res/lycan.png"></div>
+<div class="hero_button" name="chaos_knight" search="Chaos Knight" roles="Carry Disabler Durable Pusher Initiator"><img src="res/chaos_knight.png"></div>
+<div class="hero_button" name="undying" search="Undying" roles="Support Durable Disabler Nuker"><img src="res/undying.png"></div>
+<div class="hero_button" name="magnataur" search="Magnus" roles="Initiator Disabler Nuker Escape"><img src="res/magnataur.png"></div>
+<div class="hero_button" name="abaddon" search="Abaddon" roles="Support Carry Durable"><img src="res/abaddon.png"></div>
+<div class="hero_button" name="abyssal_underlord" search="Underlord" roles="Support Nuker Disabler Durable Escape"><img src="res/abyssal_underlord.png"></div>
+<div class="hero_button" name="bloodseeker" search="Bloodseeker" roles="Carry Disabler Jungler Nuker Initiator"><img src="res/bloodseeker.png"></div>
+<div class="hero_button" name="nevermore" search="Shadow Fiend" roles="Carry Nuker"><img src="res/nevermore.png"></div>
+<div class="hero_button" name="razor" search="Razor" roles="Carry Durable Nuker Pusher"><img src="res/razor.png"></div>
+<div class="hero_button" name="venomancer" search="Venomancer" roles="Support Nuker Initiator Pusher Disabler"><img src="res/venomancer.png"></div>
+<div class="hero_button" name="faceless_void" search="Faceless Void" roles="Carry Initiator Disabler Escape Durable"><img src="res/faceless_void.png"></div>
+<div class="hero_button" name="phantom_assassin" search="Phantom Assassin" roles="Carry Escape"><img src="res/phantom_assassin.png"></div>
+<div class="hero_button" name="viper" search="Viper" roles="Carry Durable Initiator Disabler"><img src="res/viper.png"></div>
+<div class="hero_button" name="clinkz" search="Clinkz" roles="Carry Escape Pusher"><img src="res/clinkz.png"></div>
+<div class="hero_button" name="broodmother" search="Broodmother" roles="Carry Pusher Escape Nuker"><img src="res/broodmother.png"></div>
+<div class="hero_button" name="weaver" search="Weaver" roles="Carry Escape"><img src="res/weaver.png"></div>
+<div class="hero_button" name="spectre" search="Spectre" roles="Carry Durable Escape"><img src="res/spectre.png"></div>
+<div class="hero_button" name="meepo" search="Meepo" roles="Carry Escape Nuker Disabler Initiator Pusher"><img src="res/meepo.png"></div>
+<div class="hero_button" name="nyx_assassin" search="Nyx Assassin" roles="Disabler Nuker Initiator Escape"><img src="res/nyx_assassin.png"></div>
+<div class="hero_button" name="slark" search="Slark" roles="Carry Escape Disabler Nuker"><img src="res/slark.png"></div>
+<div class="hero_button" name="medusa" search="Medusa" roles="Carry Disabler Durable"><img src="res/medusa.png"></div>
+<div class="hero_button" name="terrorblade" search="Terrorblade" roles="Carry Pusher Nuker"><img src="res/terrorblade.png"></div>
+<div class="hero_button" name="arc_warden" search="Arc Warden" roles="Carry Escape Nuker"><img src="res/arc_warden.png"></div>
+<div class="hero_button" name="bane" search="Bane" roles="Support Disabler Nuker Durable"><img src="res/bane.png"></div>
+<div class="hero_button" name="lich" search="Lich" roles="Support Nuker"><img src="res/lich.png"></div>
+<div class="hero_button" name="lion" search="Lion" roles="Support Disabler Nuker Initiator"><img src="res/lion.png"></div>
+<div class="hero_button" name="witch_doctor" search="Witch Doctor" roles="Support Nuker Disabler"><img src="res/witch_doctor.png"></div>
+<div class="hero_button" name="enigma" search="Enigma" roles="Disabler Jungler Initiator Pusher"><img src="res/enigma.png"></div>
+<div class="hero_button" name="necrolyte" search="Necrophos" roles="Carry Nuker Durable Disabler"><img src="res/necrolyte.png"></div>
+<div class="hero_button" name="warlock" search="Warlock" roles="Support Initiator Disabler"><img src="res/warlock.png"></div>
+<div class="hero_button" name="queenofpain" search="Queen of Pain" roles="Carry Nuker Escape"><img src="res/queenofpain.png"></div>
+<div class="hero_button" name="death_prophet" search="Death Prophet" roles="Carry Pusher Nuker Disabler"><img src="res/death_prophet.png"></div>
+<div class="hero_button" name="pugna" search="Pugna" roles="Nuker Pusher"><img src="res/pugna.png"></div>
+<div class="hero_button" name="dazzle" search="Dazzle" roles="Support Nuker Disabler"><img src="res/dazzle.png"></div>
+<div class="hero_button" name="leshrac" search="Leshrac" roles="Carry Support Nuker Pusher Disabler"><img src="res/leshrac.png"></div>
+<div class="hero_button" name="dark_seer" search="Dark Seer" roles="Initiator Jungler Escape Disabler"><img src="res/dark_seer.png"></div>
+<div class="hero_button" name="batrider" search="Batrider" roles="Initiator Jungler Disabler Escape"><img src="res/batrider.png"></div>
+<div class="hero_button" name="ancient_apparition" search="Ancient Apparition" roles="Support Disabler Nuker"><img src="res/ancient_apparition.png"></div>
+<div class="hero_button" name="invoker" search="Invoker" roles="Carry Nuker Disabler Escape Pusher"><img src="res/invoker.png"></div>
+<div class="hero_button" name="obsidian_destroyer" search="Outworld Devourer" roles="Carry Nuker Disabler"><img src="res/obsidian_destroyer.png"></div>
+<div class="hero_button" name="shadow_demon" search="Shadow Demon" roles="Support Disabler Initiator Nuker"><img src="res/shadow_demon.png"></div>
+<div class="hero_button" name="visage" search="Visage" roles="Support Nuker Durable Disabler Pusher"><img src="res/visage.png"></div>
+<div class="hero_button" name="winter_wyvern" search="Winter Wyvern" roles="Support Disabler Nuker"><img src="res/winter_wyvern.png"></div>
+<div class="hero_button" name="grimstroke" search="Grimstroke" roles="Support Nuker Disabler Escape"><img src="res/grimstroke.png"></div>

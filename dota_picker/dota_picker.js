@@ -1,12 +1,66 @@
 //
 
-var hero_list = {};
-$('div.hero_list .hero_button').each(function() {
-    hero_list[($(this).attr('name'))] = $(this).find('img').attr('src');
-});
+const roles = {
+    Carry: 0,
+    Support: 0,
+    Nuker: 0,
+    Disabler: 0,
+    Initiator: 0,
+    Pusher: 0,
+    Escape: 0,
+    Durable: 0,
+}
 
+var filter = {
+    search: '',
+    roles: {
+        Carry: 0,
+        Support: 0,
+        Nuker: 0,
+        Disabler: 0,
+        Initiator: 0,
+        Pusher: 0,
+        Escape: 0,
+        Durable: 0,
+    }
+};
+
+var hero_list = {};
 var selected_list = [];
 var div_selectedList = $('div.selected_hero_list');
+
+// load hero data from page html
+$('div.hero_list .hero_button').each(function() {
+    var thisRolesArray = $(this).attr('roles').split(' ');
+    var thisRoles = {};
+
+    for(var r in roles) {
+        thisRoles[r] = 0;
+
+        for(var i = 0; i < thisRolesArray.length; i +=1) {
+            if(thisRolesArray[i] == r) {
+                thisRoles[r] = 1;
+                break;
+            }
+        }
+    }
+
+    hero_list[($(this).attr('name'))] = {
+        src: $(this).find('img').attr('src'),
+        search: $(this).attr('search').toLowerCase(),
+        roles: thisRoles
+    }
+});
+
+// load heroes from url
+console.log(window.location.search);
+var a = window.location.search.split('=');
+if(a[0] == '?heroes') {
+    var urlHeroList = a[1].split(',');
+
+    selected_list = selected_list.concat(urlHeroList);
+    updateSelectedList();
+}
 
 $('div.hero_list .hero_button').click(function() {
     if(!$(this).hasClass('grayed') && selected_list.length < 5) {
@@ -19,7 +73,7 @@ function updateSelectedList()
 {
     var html = '';
     for(var i = 0; i < selected_list.length; i += 1) {
-        html += '<div class="hero_button"><img src="' + hero_list[selected_list[i]] + '"></div>';
+        html += '<div class="hero_button"><img src="' + hero_list[selected_list[i]].src + '"></div>';
     }
     div_selectedList.html(html);
 
@@ -30,40 +84,79 @@ function updateSelectedList()
             updateSelectedList();
         }
     });
+
+    history.pushState(null, '', '?heroes=' + selected_list.join(','));
 }
 
 
 $('.input_filter').keyup(function() {
-    // clear greyed out heroes when empty
-    if($(this).val().length == 0) {
-        $('.hero_list .hero_button').each(function() {
-            $(this).removeClass('grayed');
-        });
-        return;
-    }
+    filter.search = $(this).val();
+    applyFilter();
+});
 
-    var searchList = $(this).val().toLowerCase().split(' ');
-    var foundNames = [];
+$('.tag_select li').click(function() {
+    $(this).toggleClass('selected');
+    filter.roles[$(this).text()] = $(this).hasClass('selected') ? 1 : 0;
+    applyFilter();
+});
 
-    for(h in hero_list) {
-        for(var i = 0; i < searchList.length; i += 1) {
-            if(h.search(searchList[i]) != -1) {
-                foundNames.push(h);
+function applyFilter()
+{
+    if(filter.search == '') {
+        var empty = true;
+        for(var r in filter.roles) {
+            if(filter.roles[r] != 0) {
+                empty = false;
                 break;
             }
         }
+
+        if(empty) {
+            $('.hero_list .hero_button').each(function() {
+                $(this).removeClass('grayed');
+            });
+            return;
+        }
     }
 
-    console.log(foundNames);
+    var searchList = filter.search.length > 0 ? filter.search.toLowerCase().split(' '): [];
+    var heroFiltered = {};
+
+    for(var h in hero_list) {
+        heroFiltered[h] = 0;
+
+        if(searchList.length > 0) {
+            for(var i = 0; i < searchList.length; i += 1) {
+                if(hero_list[h].search.search(searchList[i]) != -1) {
+                    heroFiltered[h] = 1;
+                    break;
+                }
+            }
+        }
+        else {
+            heroFiltered[h] = 1;
+        }
+
+        if(heroFiltered[h] == 1) {
+            for(var r in filter.roles) {
+                if(filter.roles[r] == 1 && hero_list[h].roles[r] != filter.roles[r]) {
+                    heroFiltered[h] = 0;
+                    break;
+                }
+            }
+        }
+    }
 
     // grey out all other heroes
     $('.hero_list .hero_button').each(function() {
         $(this).addClass('grayed');
     });
 
-    for(var i = 0; i < foundNames.length; i += 1) {
-        $('.hero_list .hero_button[name="' + foundNames[i] + '"]').each(function() {
-            $(this).removeClass('grayed');
-        })
+    for(var h in heroFiltered) {
+        if(heroFiltered[h] == 1) {
+            $('.hero_list .hero_button[name="' + h + '"]').each(function() {
+                $(this).removeClass('grayed');
+            })
+        }
     }
-});
+}
