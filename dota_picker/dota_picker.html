@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dota picker</title>
+<link rel="stylesheet" type="text/css" href="dota_picker.css">
+<meta charset="UTF-8"> 
+</head>
+
+<body>
+    <div class="head">
+        <h1>Filter</h1>
+        <input type="text" class="input_filter" value="" autocomplete="off"/>
+        <h1>Selected heroes</h1>
+        <div class="selected_hero_list"></div>
+    </div>
+
+    <div class="hero_list">
+        <div class="hero_button" name="earthshaker"><img src="res/earthshaker.png"></div>
+        <div class="hero_button" name="sven"><img src="res/sven.png"></div>
+        <div class="hero_button" name="tiny"><img src="res/tiny.png"></div>
+        <div class="hero_button" name="kunkka"><img src="res/kunkka.png"></div>
+        <div class="hero_button" name="beastmaster"><img src="res/beastmaster.png"></div>
+        <div class="hero_button" name="dragon_knight"><img src="res/dragon_knight.png"></div>
+        <div class="hero_button" name="rattletrap"><img src="res/rattletrap.png"></div>
+        <div class="hero_button" name="omniknight"><img src="res/omniknight.png"></div>
+        <div class="hero_button" name="huskar"><img src="res/huskar.png"></div>
+        <div class="hero_button" name="alchemist"><img src="res/alchemist.png"></div>
+        <div class="hero_button" name="brewmaster"><img src="res/brewmaster.png"></div>
+        <div class="hero_button" name="treant"><img src="res/treant.png"></div>
+        <div class="hero_button" name="wisp"><img src="res/wisp.png"></div>
+        <div class="hero_button" name="centaur"><img src="res/centaur.png"></div>
+        <div class="hero_button" name="shredder"><img src="res/shredder.png"></div>
+        <div class="hero_button" name="bristleback"><img src="res/bristleback.png"></div>
+        <div class="hero_button" name="tusk"><img src="res/tusk.png"></div>
+        <div class="hero_button" name="elder_titan"><img src="res/elder_titan.png"></div>
+        <div class="hero_button" name="legion_commander"><img src="res/legion_commander.png"></div>
+        <div class="hero_button" name="earth_spirit"><img src="res/earth_spirit.png"></div>
+        <div class="hero_button" name="phoenix"><img src="res/phoenix.png"></div>
+        <div class="hero_button" name="antimage"><img src="res/antimage.png"></div>
+        <div class="hero_button" name="drow_ranger"><img src="res/drow_ranger.png"></div>
+        <div class="hero_button" name="juggernaut"><img src="res/juggernaut.png"></div>
+        <div class="hero_button" name="mirana"><img src="res/mirana.png"></div>
+        <div class="hero_button" name="morphling"><img src="res/morphling.png"></div>
+        <div class="hero_button" name="phantom_lancer"><img src="res/phantom_lancer.png"></div>
+        <div class="hero_button" name="vengefulspirit"><img src="res/vengefulspirit.png"></div>
+        <div class="hero_button" name="riki"><img src="res/riki.png"></div>
+        <div class="hero_button" name="sniper"><img src="res/sniper.png"></div>
+        <div class="hero_button" name="templar_assassin"><img src="res/templar_assassin.png"></div>
+        <div class="hero_button" name="luna"><img src="res/luna.png"></div>
+        <div class="hero_button" name="bounty_hunter"><img src="res/bounty_hunter.png"></div>
+        <div class="hero_button" name="ursa"><img src="res/ursa.png"></div>
+        <div class="hero_button" name="gyrocopter"><img src="res/gyrocopter.png"></div>
+        <div class="hero_button" name="lone_druid"><img src="res/lone_druid.png"></div>
+        <div class="hero_button" name="naga_siren"><img src="res/naga_siren.png"></div>
+        <div class="hero_button" name="troll_warlord"><img src="res/troll_warlord.png"></div>
+        <div class="hero_button" name="ember_spirit"><img src="res/ember_spirit.png"></div>
+        <div class="hero_button" name="monkey_king"><img src="res/monkey_king.png"></div>
+        <div class="hero_button" name="pangolier"><img src="res/pangolier.png"></div>
+        <div class="hero_button" name="crystal_maiden"><img src="res/crystal_maiden.png"></div>
+        <div class="hero_button" name="puck"><img src="res/puck.png"></div>
+        <div class="hero_button" name="storm_spirit"><img src="res/storm_spirit.png"></div>
+        <div class="hero_button" name="windrunner"><img src="res/windrunner.png"></div>
+        <div class="hero_button" name="zuus"><img src="res/zuus.png"></div>
+        <div class="hero_button" name="lina"><img src="res/lina.png"></div>
+        <div class="hero_button" name="shadow_shaman"><img src="res/shadow_shaman.png"></div>
+        <div class="hero_button" name="tinker"><img src="res/tinker.png"></div>
+        <div class="hero_button" name="furion"><img src="res/furion.png"></div>
+        <div class="hero_button" name="enchantress"><img src="res/enchantress.png"></div>
+        <div class="hero_button" name="jakiro"><img src="res/jakiro.png"></div>
+        <div class="hero_button" name="chen"><img src="res/chen.png"></div>
+        <div class="hero_button" name="silencer"><img src="res/silencer.png"></div>
+        <div class="hero_button" name="ogre_magi"><img src="res/ogre_magi.png"></div>
+        <div class="hero_button" name="rubick"><img src="res/rubick.png"></div>
+        <div class="hero_button" name="disruptor"><img src="res/disruptor.png"></div>
+        <div class="hero_button" name="keeper_of_the_light"><img src="res/keeper_of_the_light.png"></div>
+        <div class="hero_button" name="skywrath_mage"><img src="res/skywrath_mage.png"></div>
+        <div class="hero_button" name="oracle"><img src="res/oracle.png"></div>
+        <div class="hero_button" name="techies"><img src="res/techies.png"></div>
+        <div class="hero_button" name="dark_willow"><img src="res/dark_willow.png"></div>
+        <div class="hero_button" name="axe"><img src="res/axe.png"></div>
+        <div class="hero_button" name="pudge"><img src="res/pudge.png"></div>
+        <div class="hero_button" name="sand_king"><img src="res/sand_king.png"></div>
+        <div class="hero_button" name="slardar"><img src="res/slardar.png"></div>
+        <div class="hero_button" name="tidehunter"><img src="res/tidehunter.png"></div>
+        <div class="hero_button" name="skeleton_king"><img src="res/skeleton_king.png"></div>
+        <div class="hero_button" name="life_stealer"><img src="res/life_stealer.png"></div>
+        <div class="hero_button" name="night_stalker"><img src="res/night_stalker.png"></div>
+        <div class="hero_button" name="doom_bringer"><img src="res/doom_bringer.png"></div>
+        <div class="hero_button" name="spirit_breaker"><img src="res/spirit_breaker.png"></div>
+        <div class="hero_button" name="lycan"><img src="res/lycan.png"></div>
+        <div class="hero_button" name="chaos_knight"><img src="res/chaos_knight.png"></div>
+        <div class="hero_button" name="undying"><img src="res/undying.png"></div>
+        <div class="hero_button" name="magnataur"><img src="res/magnataur.png"></div>
+        <div class="hero_button" name="abaddon"><img src="res/abaddon.png"></div>
+        <div class="hero_button" name="abyssal_underlord"><img src="res/abyssal_underlord.png"></div>
+        <div class="hero_button" name="bloodseeker"><img src="res/bloodseeker.png"></div>
+        <div class="hero_button" name="nevermore"><img src="res/nevermore.png"></div>
+        <div class="hero_button" name="razor"><img src="res/razor.png"></div>
+        <div class="hero_button" name="venomancer"><img src="res/venomancer.png"></div>
+        <div class="hero_button" name="faceless_void"><img src="res/faceless_void.png"></div>
+        <div class="hero_button" name="phantom_assassin"><img src="res/phantom_assassin.png"></div>
+        <div class="hero_button" name="viper"><img src="res/viper.png"></div>
+        <div class="hero_button" name="clinkz"><img src="res/clinkz.png"></div>
+        <div class="hero_button" name="broodmother"><img src="res/broodmother.png"></div>
+        <div class="hero_button" name="weaver"><img src="res/weaver.png"></div>
+        <div class="hero_button" name="spectre"><img src="res/spectre.png"></div>
+        <div class="hero_button" name="meepo"><img src="res/meepo.png"></div>
+        <div class="hero_button" name="nyx_assassin"><img src="res/nyx_assassin.png"></div>
+        <div class="hero_button" name="slark"><img src="res/slark.png"></div>
+        <div class="hero_button" name="medusa"><img src="res/medusa.png"></div>
+        <div class="hero_button" name="terrorblade"><img src="res/terrorblade.png"></div>
+        <div class="hero_button" name="arc_warden"><img src="res/arc_warden.png"></div>
+        <div class="hero_button" name="bane"><img src="res/bane.png"></div>
+        <div class="hero_button" name="lich"><img src="res/lich.png"></div>
+        <div class="hero_button" name="lion"><img src="res/lion.png"></div>
+        <div class="hero_button" name="witch_doctor"><img src="res/witch_doctor.png"></div>
+        <div class="hero_button" name="enigma"><img src="res/enigma.png"></div>
+        <div class="hero_button" name="necrolyte"><img src="res/necrolyte.png"></div>
+        <div class="hero_button" name="warlock"><img src="res/warlock.png"></div>
+        <div class="hero_button" name="queenofpain"><img src="res/queenofpain.png"></div>
+        <div class="hero_button" name="death_prophet"><img src="res/death_prophet.png"></div>
+        <div class="hero_button" name="pugna"><img src="res/pugna.png"></div>
+        <div class="hero_button" name="dazzle"><img src="res/dazzle.png"></div>
+        <div class="hero_button" name="leshrac"><img src="res/leshrac.png"></div>
+        <div class="hero_button" name="dark_seer"><img src="res/dark_seer.png"></div>
+        <div class="hero_button" name="batrider"><img src="res/batrider.png"></div>
+        <div class="hero_button" name="ancient_apparition"><img src="res/ancient_apparition.png"></div>
+        <div class="hero_button" name="invoker"><img src="res/invoker.png"></div>
+        <div class="hero_button" name="obsidian_destroyer"><img src="res/obsidian_destroyer.png"></div>
+        <div class="hero_button" name="shadow_demon"><img src="res/shadow_demon.png"></div>
+        <div class="hero_button" name="visage"><img src="res/visage.png"></div>
+        <div class="hero_button" name="winter_wyvern"><img src="res/winter_wyvern.png"></div>
+        <div class="hero_button" name="grimstroke"><img src="res/grimstroke.png"></div>
+    </div>
+</body>
+
+<script src="jquery-3.3.1.min.js"></script>
+<script src="dota_picker.js"></script>
+</html>
