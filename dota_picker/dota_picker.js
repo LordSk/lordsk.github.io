@@ -5,10 +5,12 @@ let blockPlayer = $('.head_player');
 
 $('#tab_team').click(function() {
     setupTabTeam();
+    saveUrlTeam();
 });
 
 $('#tab_player').click(function() {
     setupTabPlayer();
+    saveUrlPlayerPosition();
 });
 
 let hero_list = {};
@@ -28,8 +30,6 @@ function setupTabTeam()
             updateSelectedList();
         }
     });
-
-    saveUrlTeam();
 }
 
 let playerPosSelectedId = 0;
@@ -68,8 +68,6 @@ function setupTabPlayer()
             updatePositionSelectedList(playerPosSelectedId);
         }
     });
-
-    saveUrlPlayerPosition();
 }
 
 // make progress bars
