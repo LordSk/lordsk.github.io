@@ -33,7 +33,6 @@ h1 {
 }
 
 .selected_hero_list {
-    display: flex;
     margin-bottom: 25px;
 }
 
@@ -138,4 +137,66 @@ ul.tag_select li.selected {
     width: 0%;
     height: 100%;
     background: rgb(0, 89, 255);
+}
+
+.tabs {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.tabs li {
+    display: block;
+    margin: 0;
+    padding: 10px;
+    color: #ffffff;
+}
+
+.tabs li:hover {
+    cursor: pointer;
+}
+
+.pos_column {
+    margin-right: 5px;
+    padding: 2px;
+}
+
+.pos_column.selected, .pos_column.selected:hover {
+    background: #004ad3;
+}
+
+.pos_column:hover {
+    background: #002569;
+}
+
+.pos_column h1:hover {
+    cursor: pointer;
+}
+
+.pos_column h1:hover, .pos_column.selected h1 {
+    color: #fff;
+}
+
+.head_player {
+    display: flex;
+}
+
+.head_player h1 {
+    font-size: 1.4em;
+    margin-top: 0;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #abaeaa;
+    text-align: center;
+}
+
+.head_player .selected_hero_list {
+    height: 275px;
+    width: 97px;
+    margin: 0;
+}
+
+.head_player .selected_hero_list .hero_button {
+    display: block;
 }
