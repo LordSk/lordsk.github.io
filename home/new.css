@@ -155,6 +155,7 @@ a#mail:hover {
     font-size: 1.2rem;
     font-family: 'europa', sans-serif;
     font-weight: 300;
+    text-align: center;
 }
 
 .blockSubtitle h1 {
