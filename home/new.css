@@ -10,6 +10,7 @@ body {
     padding: 0;
     margin: 0;
     font-size: 1rem;
+    background: #000433;
 }
 
 canvas {
@@ -131,8 +132,9 @@ a#mail:hover {
 .content {
     color: #fff;
     font-family: 'Source Sans Pro', sans-serif;
-    background: #000433;
     padding-bottom: 20px;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .content .accent {
@@ -214,6 +216,7 @@ h1.titleDev {
 
 .blockTools div {
     padding: 20px;
+    padding-top: 50px;
 }
 
 .blockTools div p {
