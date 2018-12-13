@@ -2,71 +2,71 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Programming adventures</title>
-    <link>https://lordsk.github.io/post/</link>
+    <link>https://lordsk.github.io/blog/post/</link>
     <description>Recent content in Posts on Programming adventures</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Thomas Leroy</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0100</lastBuildDate>
     
-	<atom:link href="https://lordsk.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://lordsk.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>0xed: the choice of GUI library</title>
-      <link>https://lordsk.github.io/post/0xed_part1/</link>
+      <link>https://lordsk.github.io/blog/post/0xed_part1/</link>
       <pubDate>Sun, 17 Jun 2018 20:17:26 +0200</pubDate>
       
-      <guid>https://lordsk.github.io/post/0xed_part1/</guid>
+      <guid>https://lordsk.github.io/blog/post/0xed_part1/</guid>
       <description>Preface 0xed is a hexadecimal data viewer/editor that I am currently working on. The idea to make my own arose after vainly searching for a decent one. I actually found one which had almost all of the basic features I wanted to use, 010 editor, but unfortunately it is neither free nor open source. Thus I can&amp;rsquo;t really tamper with it or make it &amp;ldquo;better&amp;rdquo;.
 Basic features I want to be able to visualize file data as either hex, int16, float32 and so on.</description>
     </item>
     
     <item>
       <title>Neuroevolution: bird simulation</title>
-      <link>https://lordsk.github.io/post/learning_neuroevolution_part_3/</link>
+      <link>https://lordsk.github.io/blog/post/learning_neuroevolution_part_3/</link>
       <pubDate>Tue, 17 Apr 2018 13:23:11 +0200</pubDate>
       
-      <guid>https://lordsk.github.io/post/learning_neuroevolution_part_3/</guid>
+      <guid>https://lordsk.github.io/blog/post/learning_neuroevolution_part_3/</guid>
       <description>We now know how to train feed forward neural networks through evolution. Let&amp;rsquo;s see how it fairs in a &amp;ldquo;real&amp;rdquo; environment.
 Burds I created a little simulation where 2D birds try to manoeuvre in the air in order to eat apples. They can flap their wings (moving them forward), turn left, right and &amp;ldquo;brake&amp;rdquo; to some extent (this makes much more sense in motion, see video below). They have 10 seconds to reach the next apple.</description>
     </item>
     
     <item>
       <title>Neuroevolution: fitness and birds</title>
-      <link>https://lordsk.github.io/post/learning_neuroevolution_part_2/</link>
+      <link>https://lordsk.github.io/blog/post/learning_neuroevolution_part_2/</link>
       <pubDate>Mon, 09 Apr 2018 16:41:44 +0200</pubDate>
       
-      <guid>https://lordsk.github.io/post/learning_neuroevolution_part_2/</guid>
+      <guid>https://lordsk.github.io/blog/post/learning_neuroevolution_part_2/</guid>
       <description>Last time we established what the basic concept of neuroevolution is and I used a simple diagram to illustrate it. That diagram is actually slightly false. For simplification I omitted how we repopulate after selecting only the fittest specimen. Most of the time, a type of crossover technique is used, but we could also simply clone the better specimen. Here is the fixed version.
 I will now go over each step in more details and explain a few techniques I employed for each of them.</description>
     </item>
     
     <item>
       <title>Neuroevolution: the basics</title>
-      <link>https://lordsk.github.io/post/learning_neuroevolution_part_1/</link>
+      <link>https://lordsk.github.io/blog/post/learning_neuroevolution_part_1/</link>
       <pubDate>Tue, 03 Apr 2018 20:08:50 +0200</pubDate>
       
-      <guid>https://lordsk.github.io/post/learning_neuroevolution_part_1/</guid>
+      <guid>https://lordsk.github.io/blog/post/learning_neuroevolution_part_1/</guid>
       <description>Ever since I heard about neural networks I wanted to learn how they work and how to use them. Today (deep) neural networks are being used in more and more domains, ranging from the popular self-driving vehicle system, to diverse uses in medicine or even speech recognition and synthesis. That trend is not going to stop anytime soon, which meant it was time for me to start my journey to understanding this new revolutionary tool.</description>
     </item>
     
     <item>
       <title>Remaking Sacred, part 1: Introduction and textures</title>
-      <link>https://lordsk.github.io/post/resacred_part_1/</link>
+      <link>https://lordsk.github.io/blog/post/resacred_part_1/</link>
       <pubDate>Tue, 05 Dec 2017 00:06:25 +0100</pubDate>
       
-      <guid>https://lordsk.github.io/post/resacred_part_1/</guid>
+      <guid>https://lordsk.github.io/blog/post/resacred_part_1/</guid>
       <description>Introduction Sacred is an old 2004 game, a RPG similar to Diablo. I remember getting it for free at the time, attached to my PC Gamer magazine. It was my first real RPG game I ever got my hands on, and it was amazing. I have many great memories playing this game, overcoming difficult enemies, completing quests, and dropping loot! Oh the satisfaction.
 The year is now 2017 and I wanted to revisit Sacred, many years later.</description>
     </item>
     
     <item>
       <title>welcome</title>
-      <link>https://lordsk.github.io/post/welcome/</link>
+      <link>https://lordsk.github.io/blog/post/welcome/</link>
       <pubDate>Tue, 11 Apr 2017 19:05:28 +0200</pubDate>
       
-      <guid>https://lordsk.github.io/post/welcome/</guid>
+      <guid>https://lordsk.github.io/blog/post/welcome/</guid>
       <description>Welcome. This is a test post.</description>
     </item>
     
