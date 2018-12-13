@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI on Programming adventures</title>
+    <link>https://lordsk.github.io/categories/ai/</link>
+    <description>Recent content in AI on Programming adventures</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Thomas Leroy</copyright>
+    <lastBuildDate>Tue, 17 Apr 2018 13:23:11 +0200</lastBuildDate>
+    
+	<atom:link href="https://lordsk.github.io/categories/ai/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Neuroevolution: bird simulation</title>
+      <link>https://lordsk.github.io/post/learning_neuroevolution_part_3/</link>
+      <pubDate>Tue, 17 Apr 2018 13:23:11 +0200</pubDate>
+      
+      <guid>https://lordsk.github.io/post/learning_neuroevolution_part_3/</guid>
+      <description>We now know how to train feed forward neural networks through evolution. Let&amp;rsquo;s see how it fairs in a &amp;ldquo;real&amp;rdquo; environment.
+Burds I created a little simulation where 2D birds try to manoeuvre in the air in order to eat apples. They can flap their wings (moving them forward), turn left, right and &amp;ldquo;brake&amp;rdquo; to some extent (this makes much more sense in motion, see video below). They have 10 seconds to reach the next apple.</description>
+    </item>
+    
+    <item>
+      <title>Neuroevolution: fitness and birds</title>
+      <link>https://lordsk.github.io/post/learning_neuroevolution_part_2/</link>
+      <pubDate>Mon, 09 Apr 2018 16:41:44 +0200</pubDate>
+      
+      <guid>https://lordsk.github.io/post/learning_neuroevolution_part_2/</guid>
+      <description>Last time we established what the basic concept of neuroevolution is and I used a simple diagram to illustrate it. That diagram is actually slightly false. For simplification I omitted how we repopulate after selecting only the fittest specimen. Most of the time, a type of crossover technique is used, but we could also simply clone the better specimen. Here is the fixed version.
+I will now go over each step in more details and explain a few techniques I employed for each of them.</description>
+    </item>
+    
+    <item>
+      <title>Neuroevolution: the basics</title>
+      <link>https://lordsk.github.io/post/learning_neuroevolution_part_1/</link>
+      <pubDate>Tue, 03 Apr 2018 20:08:50 +0200</pubDate>
+      
+      <guid>https://lordsk.github.io/post/learning_neuroevolution_part_1/</guid>
+      <description>Ever since I heard about neural networks I wanted to learn how they work and how to use them. Today (deep) neural networks are being used in more and more domains, ranging from the popular self-driving vehicle system, to diverse uses in medicine or even speech recognition and synthesis. That trend is not going to stop anytime soon, which meant it was time for me to start my journey to understanding this new revolutionary tool.</description>
+    </item>
+    
+  </channel>
+</rss>

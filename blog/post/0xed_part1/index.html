@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    <title>
+      
+      0xed: the choice of GUI library - Programming adventures
+      
+		</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    
+    <link href="https://fonts.loli.net/css?family=Bree+Serif|Lato:100,100i,300,300i,400,400i,700,700i|Source+Code+Pro:300,400,500,700" rel="stylesheet">
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/bigfoot/dist/bigfoot.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/bigfoot/dist/bigfoot-number.css" />
+    <script type="text/javascript">
+        $.bigfoot();
+    </script>
+    
+    
+</head>
+
+    <body class="post-template">
+        <header class="main-header">
+	<div class="main-header-content">
+		<h1 class="blog-title">
+			<a href="/">
+				
+           Programming adventures
+				
+			</a>
+		</h1>
+		<h2 class="blog-description">A simple blog about my projects</h2>
+	</div>
+
+	<div class="nav">
+    
+		
+	</div>
+</header>
+
+        
+<main class="content" role="main">
+  <article class="post">
+    <header class="post-header">
+      
+        <img src="img/0xed/0xed_screen_1.png"></img>
+      
+      <h2 class="post-title">0xed: the choice of GUI library</h2>
+      <section class="post-meta">
+        <time class="post-date">17/06/2018</time>
+      </section>
+    </header>
+    <section class="post-content">
+      
+
+<h3 id="preface">Preface</h3>
+
+<p><strong>0xed</strong> is a hexadecimal data viewer/editor that I am currently working on. The idea to make my own arose after vainly searching for a decent one.
+I actually found one which had almost all of the basic features I wanted to use, <strong>010 editor</strong>, but unfortunately it is neither free nor open source.
+Thus I can&rsquo;t really tamper with it or make it &ldquo;better&rdquo;.</p>
+
+<h3 id="basic-features">Basic features</h3>
+
+<p>I want to be able to visualize file data as either <strong>hex, int16, float32</strong> and so on.
+I want to code a <strong>simple script</strong> to make structures and place them, to investigate file data depending on the format.
+Later on I&rsquo;d like to edit based on data type I chose.</p>
+
+<p>That doesn&rsquo;t sound too hard, does it?</p>
+
+<h3 id="nuklear">Nuklear</h3>
+
+<p>The first UI library I tried is <a href="https://github.com/vurtun/nuklear">Nuklear</a>. I wanted to try it for a while as I heard good things about it.
+Unfortunately it seems Nuklear is not really usable for what I wanted out of it. A lot of stuff is unpolished, correct padding and precise positioning seems impossible to achieve.
+Text rendering is somewhat blurry, some behavior feels hacked in (menus, combobox). Anyway you get the idea, at the time I tested Nuklear (it may have changed now) it was not the right choice.</p>
+
+<h3 id="qt">Qt</h3>
+
+<p>Now onto the most popular UI library, <strong>Qt</strong>. So I setup a small application. All I had was a grid with each byte displayed as hexadecimal text, about 50x16.
+Shockingly, <strong>performance was terrible</strong>. Rendering a small batch of text was causing hanging (during scrolling for example).
+Now I know what you must think, surely this guy is thinking Qt is at fault but in reality his own code is causing the freezes.
+I wish that was true. I spent weeks on the issue, caching text to pixmaps, to limiting refresh rate to 20fps. Nothing worked to the extend I wanted it to.
+I am certain there is a solution to this, as 010 editor does use Qt as well, but I didn&rsquo;t find it.</p>
+
+<h3 id="dear-imgui">Dear ImGui</h3>
+
+<p><a href="https://github.com/ocornut/imgui">Dear ImGui</a> is an immediate mode GUI library (much like Nuklear), and possibly the best lib I ever used.
+Immediate mode GUI libs are a joy to use, you can do things like:</p>
+
+<pre><code class="language-c++">if(ImGui::Button(&quot;OK&quot;)) {
+    doSomething();
+}
+</code></pre>
+
+<p>I already used Dear ImGui a bunch in the past, so I knew it would perform well.
+I could render hundreds of panels (see below) and still be completely fine while still having all the advantages of immediate mode (code is very straightforward to write).
+So that&rsquo;s what I am using for now. I may come back to Qt if I find a solution to the text rending issue, but I also may not. Dear ImGui is amazing and gives me everything I wanted and more.</p>
+
+<p><img src="/img/0xed/0xed_screen_1.png" alt="0xed_screen1" title="0xed_screen1" /></p>
+
+    </section>
+    <footer class="post-footer">
+      
+    </footer>
+  </article>
+</main>
+
+        <footer class="site-footer">
+  <section class="rss"><a class="subscribe-button icon-feed" href="/index.xml"></a></section>
+  <section class="twitter"><a class="icon-twitter" href="https://twitter.com/LordSk_"> LordSk_</a></section>
+  
+  <section class="copyright">&copy; 2018 Thomas Leroy</section>
+  <section class="poweredby"><a href="http://thedarkroast.com/arabica">Arabica</a> theme by Sean Lunsford. Published with <a href="https://gohugo.io">Hugo</a>.</section>
+</footer>
+
+
+
+    </body>
+</html>

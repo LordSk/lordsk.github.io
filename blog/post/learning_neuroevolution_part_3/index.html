@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    <title>
+      
+      Neuroevolution: bird simulation - Programming adventures
+      
+		</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    
+    <link href="https://fonts.loli.net/css?family=Bree+Serif|Lato:100,100i,300,300i,400,400i,700,700i|Source+Code+Pro:300,400,500,700" rel="stylesheet">
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/bigfoot/dist/bigfoot.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/bigfoot/dist/bigfoot-number.css" />
+    <script type="text/javascript">
+        $.bigfoot();
+    </script>
+    
+    
+</head>
+
+    <body class="post-template">
+        <header class="main-header">
+	<div class="main-header-content">
+		<h1 class="blog-title">
+			<a href="/">
+				
+           Programming adventures
+				
+			</a>
+		</h1>
+		<h2 class="blog-description">A simple blog about my projects</h2>
+	</div>
+
+	<div class="nav">
+    
+		
+	</div>
+</header>
+
+        
+<main class="content" role="main">
+  <article class="post">
+    <header class="post-header">
+      
+        <img src="img/burds_1.jpg"></img>
+      
+      <h2 class="post-title">Neuroevolution: bird simulation</h2>
+      <section class="post-meta">
+        <time class="post-date">17/04/2018</time>
+      </section>
+    </header>
+    <section class="post-content">
+      
+
+<p>We now know how to train feed forward neural networks through evolution. Let&rsquo;s see how it fairs in a &ldquo;real&rdquo; environment.</p>
+
+<h3 id="burds">Burds</h3>
+
+<p>I created a little simulation where 2D birds try to manoeuvre in the air in order to eat apples. They can flap their wings (moving them forward), turn left, right and &ldquo;brake&rdquo; to some extent
+(this makes much more sense in motion, see video below). They have 10 seconds to reach the next apple. Upon reaching it, their lifetime is reset to 10 seconds. If they touch the ground they die.</p>
+
+<h3 id="brain">Brain</h3>
+
+<p>Here is the very simple NN topology I used.</p>
+
+<p><img src="/img/burd_nn.png" alt="burd NN" title="burd NN" /></p>
+
+<p>A <strong>6x4x4</strong> fully connected feed forward NN.</p>
+
+<h4 id="input">Input</h4>
+
+<ul>
+<li><strong>offsetX</strong>/<strong>offsetY</strong> is the relative distance between the next apple and the bird.</li>
+<li><strong>velocityX</strong>/<strong>velocityY</strong> is the velocity vector of the bird.</li>
+<li><strong>angle</strong> is the orientation of the bird.</li>
+<li><strong>canFlap</strong> is either 1 or 0 depending of the flap cooldown.</li>
+</ul>
+
+<h4 id="output">Output</h4>
+
+<ul>
+<li><strong>turnLeft</strong>/<strong>turnRight</strong> will rotate the bird left or right.</li>
+<li><strong>flap</strong> will make the bird flap if it can.</li>
+<li><strong>brake</strong> will make the bird slow down.</li>
+</ul>
+
+<h3 id="fitness-function">Fitness function</h3>
+
+<p>Now what is the fitness function? The objective here is to <strong>eat apples</strong>, so</p>
+
+<p><code>fitness = appleEatenCount</code></p>
+
+<p>makes sense. One bird flying in a random direction will eventually hit and apple leading to more
+and more birds reaching the first apple. The cycle repeats for the next apple and so on. This would, after a very long time, converge to the solution we want, eating all the apples.
+But we can do better than that, much better in fact. We can start by taking <strong>the distance to the next apple</strong> in account. At any point t the fitness function then becomes</p>
+
+<p><code>fitness = appleEatenCount + 1/distanceToNextApple</code></p>
+
+<p>The closer a bird is to the next apple, the more fit it is. However birds naturally will move in a curved manner, getting farther to the next apple before getting closer.
+This function only rewards getting closer which is not ultimately what we want. In the end here is the code I settled on.</p>
+
+<pre><code>distFactor = 1.0 - (min(distance(birdPos, applePos), 2000) / 2000.0) // 0.0 -&gt; 1.0
+healthFactor = birdHealth / HEALTH_MAX
+
+// fitness accumulation every frame
+fitnessAcc += (healthFactor + distFactor * distFactor) * FRAME_DT
+fitness = fitnessAcc
+fitness += fitness * 0.1 * appleEatenCount
+</code></pre>
+
+<p>I won&rsquo;t go too much into details, but this function rewards staying close to the next apple, being healthy (and therefore quick) and of course eating apples.
+So finally, here is the result.</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/DlfPMHCaD90" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+    </section>
+    <footer class="post-footer">
+      
+    </footer>
+  </article>
+</main>
+
+        <footer class="site-footer">
+  <section class="rss"><a class="subscribe-button icon-feed" href="/index.xml"></a></section>
+  <section class="twitter"><a class="icon-twitter" href="https://twitter.com/LordSk_"> LordSk_</a></section>
+  
+  <section class="copyright">&copy; 2018 Thomas Leroy</section>
+  <section class="poweredby"><a href="http://thedarkroast.com/arabica">Arabica</a> theme by Sean Lunsford. Published with <a href="https://gohugo.io">Hugo</a>.</section>
+</footer>
+
+
+
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>0xed on Programming adventures</title>
+    <link>https://lordsk.github.io/categories/0xed/</link>
+    <description>Recent content in 0xed on Programming adventures</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Thomas Leroy</copyright>
+    <lastBuildDate>Sun, 17 Jun 2018 20:17:26 +0200</lastBuildDate>
+    
+	<atom:link href="https://lordsk.github.io/categories/0xed/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>0xed: the choice of GUI library</title>
+      <link>https://lordsk.github.io/post/0xed_part1/</link>
+      <pubDate>Sun, 17 Jun 2018 20:17:26 +0200</pubDate>
+      
+      <guid>https://lordsk.github.io/post/0xed_part1/</guid>
+      <description>Preface 0xed is a hexadecimal data viewer/editor that I am currently working on. The idea to make my own arose after vainly searching for a decent one. I actually found one which had almost all of the basic features I wanted to use, 010 editor, but unfortunately it is neither free nor open source. Thus I can&amp;rsquo;t really tamper with it or make it &amp;ldquo;better&amp;rdquo;.
+Basic features I want to be able to visualize file data as either hex, int16, float32 and so on.</description>
+    </item>
+    
+  </channel>
+</rss>

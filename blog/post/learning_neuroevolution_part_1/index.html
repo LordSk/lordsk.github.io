@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    <title>
+      
+      Neuroevolution: the basics - Programming adventures
+      
+		</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    
+    <link href="https://fonts.loli.net/css?family=Bree+Serif|Lato:100,100i,300,300i,400,400i,700,700i|Source+Code+Pro:300,400,500,700" rel="stylesheet">
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/bigfoot/dist/bigfoot.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/bigfoot/dist/bigfoot-number.css" />
+    <script type="text/javascript">
+        $.bigfoot();
+    </script>
+    
+    
+</head>
+
+    <body class="post-template">
+        <header class="main-header">
+	<div class="main-header-content">
+		<h1 class="blog-title">
+			<a href="/">
+				
+           Programming adventures
+				
+			</a>
+		</h1>
+		<h2 class="blog-description">A simple blog about my projects</h2>
+	</div>
+
+	<div class="nav">
+    
+		
+	</div>
+</header>
+
+        
+<main class="content" role="main">
+  <article class="post">
+    <header class="post-header">
+      
+      <h2 class="post-title">Neuroevolution: the basics</h2>
+      <section class="post-meta">
+        <time class="post-date">03/04/2018</time>
+      </section>
+    </header>
+    <section class="post-content">
+      
+
+<p>Ever since I heard about <strong>neural networks</strong> I wanted to learn how they work and how to use them.
+Today (deep) neural networks are being used in more and more domains, ranging from the popular self-driving vehicle system, to diverse uses in medicine or even speech recognition and synthesis.
+That trend is not going to stop anytime soon, which meant it was time for me to start my journey to understanding this new revolutionary tool.</p>
+
+<h3 id="a-simple-neural-network">A simple neural network</h3>
+
+<p><img src="/img/feedforward_nn.png" alt="neural network" title="neural network" /></p>
+
+<p>The base concept of a neural network is fairly simple. You first have the <strong>input</strong> nodes, which are your input values. These could be a position x,y,z,
+ pixel values or whatever you want depending on the issue to solve.
+Then comes a number of <strong>hidden</strong> layers, each connected to the previous layer. In the same manner, the <strong>output</strong> layer is at the end,
+ producing your output values. Each arrow represent a <strong>connection</strong> and has a weight associated to it.</p>
+
+<p>This particular type of network is called a <strong>feed forward deep neural network</strong>. &ldquo;Feed forward&rdquo; because it goes from left to right, from the input layer to the output layer.
+&ldquo;Deep&rdquo; because it has more than one hidden layer. So how do you actually compute the values?</p>
+
+<ul>
+<li>First you set your input values (ex: 1.0, 0.5, -1.0, 0.2)</li>
+<li>Then for each layer (hidden and output) you do:</li>
+</ul>
+
+<p><code>activate(previous_layer_node_val x connection_weight + bias)</code></p>
+
+<p>or here is the expanded version:</p>
+
+<pre><code>foreach node:
+    val = bias
+    
+    for 0..prev_layer_node_count:
+        val = val + prev_layer_node_val[i] * connection_weight[i]
+    end
+    
+    val = activate(val)
+end
+</code></pre>
+
+<p><strong>previous_layer_node_val</strong> are the node values of the previous layer. <strong>connection_weight</strong> is the connection weight matrix and <strong>bias</strong> is a single value added for mathematical reasons
+ (I encourage you to research why on your own). <strong>activate</strong> is the activation function. Functions like <code>sigmoid</code> or <code>tanh</code> are commonly used. The activation function allows us to construct
+ non-linear functions, a feed forward NN is basically a big function.</p>
+
+<h3 id="training-learning">Training / Learning</h3>
+
+<p>Now we know how a simple NN works, but we still have to tune it, or as it is often called, <em>train</em> it. Training in this example is adjusting each connection weight to get the desired result.
+<strong>Backpropagation</strong> is one way to do it but I wanted to explore another one first, <strong>neuroevolution</strong>.</p>
+
+<h3 id="neuroevolution">Neuroevolution</h3>
+
+<p><img src="/img/neuroevolution_1.png" alt="neuroevolution" title="neuroevolution" /></p>
+
+<p>Neuroevolution bases itself upon biological evolution, <strong>survival of the fittest</strong>. We start with a random <strong>population</strong> of networks with each weight randomized, evaluate them and keep the best.
+We then proceed to <strong>mutate</strong> some of them (disrupting a/several connection weight) and repeat the process. This is the barebones principle of neuroevolution, pretty simple right?</p>
+
+<p>In the next article we&rsquo;ll expand on the concept and introduce you to my bird simulation, see you then!</p>
+
+    </section>
+    <footer class="post-footer">
+      
+    </footer>
+  </article>
+</main>
+
+        <footer class="site-footer">
+  <section class="rss"><a class="subscribe-button icon-feed" href="/index.xml"></a></section>
+  <section class="twitter"><a class="icon-twitter" href="https://twitter.com/LordSk_"> LordSk_</a></section>
+  
+  <section class="copyright">&copy; 2018 Thomas Leroy</section>
+  <section class="poweredby"><a href="http://thedarkroast.com/arabica">Arabica</a> theme by Sean Lunsford. Published with <a href="https://gohugo.io">Hugo</a>.</section>
+</footer>
+
+
+
+    </body>
+</html>
