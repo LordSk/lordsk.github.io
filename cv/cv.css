@@ -1,0 +1,326 @@
+/* */
+
+@font-face {
+    font-family: Helvetica;
+    src: url("helvetica-regular.otf");
+}
+
+body {
+    max-width: 1000px;
+    font-family: Calibri;
+    padding: 0;
+    margin: 0 auto;
+}
+
+h3 {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    font-weight: normal;
+}
+
+h4 {
+    margin: 0;
+}
+
+.parcours_table {
+    padding: 0;
+    margin: 0;
+}
+
+.row_annee {
+    display: flex;
+    justify-content: center;
+}
+
+.column_left, .column_right {
+    flex: 50%;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.column_left {
+    display: none;
+}
+
+.column_center {
+    display: flex;
+    flex-direction: column;
+    background: #ececec;
+    border-right: 1px solid #d2d2d2;
+    border-left: 1px solid #d2d2d2;
+    width: 48px;
+}
+
+.column_center.pad {
+    height: 20px;
+}
+
+.education {
+    color: #471a00;
+}
+
+.travail {
+    color: #002747;
+}
+
+.projet {
+    color: #07501c;
+}
+
+.titre {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 8px;
+    padding-bottom: 2px;
+}
+
+.column_left .titre {
+    text-align: right;
+}
+
+.education .titre {
+    border-bottom: 1px solid #ff6e00;
+}
+
+.travail .titre {
+    border-bottom: 1px solid #008cff;
+}
+
+.projet .titre {
+    border-bottom: 1px dashed #00992d;
+}
+
+.desc {
+    display: none;
+    padding: 10px;
+}
+
+.desc img {
+    width: 100%;
+    padding-top: 5px;
+}
+
+.desc img:hover {
+    cursor: pointer;
+}
+
+.desc .duration {
+    margin: 0;
+    padding-left: 24px;
+    padding-right: 10px;
+    margin-top: 3px;
+    margin-bottom: 8px;
+    margin-left: 3px;
+    background: url("clock.png") left center no-repeat;
+    line-height: 16px;
+}
+
+.desc a {
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: url("link-2.png") no-repeat;
+    background-position: 0 11px;
+    padding-left: 22px;
+}
+
+.desc a.img_link {
+    display: inline-block;
+    background: none;
+    padding: 0;
+    padding-top: 5px;
+}
+
+.desc p.desc_text {
+    margin: 0;
+    padding: 5px;
+    background: white;
+    color: black;
+}
+
+.education .desc {
+    background: #fff1e7;
+}
+
+.projet .desc {
+    background: #f0ffe7;
+}
+
+.travail .desc {
+    background: #e7f2ff;
+}
+
+.education .titre:hover {
+    color: #ff6e00;
+    cursor: pointer;
+    text-shadow: 0 1px 1px #bbbbbb;
+}
+
+.travail .titre:hover {
+    color: #008cff;
+    cursor: pointer;
+    text-shadow: 0 1px 1px #bbbbbb;
+}
+
+.projet .titre:hover {
+    color: #00992d;
+    cursor: pointer;
+    text-shadow: 0 1px 1px #bbbbbb;
+}
+
+.projet .titre:active,
+.education .titre:active,
+.travail .titre:active {
+    color: #000;
+    cursor: pointer;
+    text-shadow: 0 -1px 1px #bbbbbb;
+}
+
+.annee {
+    text-align: center;
+    color: #000;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background: #ffffff;
+    border: 1px solid #717171;
+    margin: auto 0;
+}
+
+.comp_row {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    padding-left: 20px;
+    justify-content: center;
+}
+
+.comp_flex {
+    padding: 15px;
+    flex: 50%;
+}
+
+.comp_flex p {
+    margin: 0;
+    background: url("chevron-right.png") no-repeat left center;
+    padding-left: 15px;
+}
+
+.comp_flex .star1 {
+    background: url("star_1.png") no-repeat left center;
+    padding-left: 38px;
+}
+.comp_flex .star2 {
+    background: url("star_2.png") no-repeat left center;
+    padding-left: 38px;
+}
+.comp_flex .star3 {
+    background: url("star_3.png") no-repeat left center;
+    padding-left: 38px;
+}
+
+.comp_flex .span_years {
+    color: #88c4ff;
+    padding-left: 5px;
+}
+
+.comp_flex:hover .span_years {
+    color: #0382ff;
+}
+
+.comp_flex h4 {
+    font-size: 1.2em;
+    padding-bottom: 4px;
+}
+
+.cv_titre {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.competences h3 {
+    width: 100%;
+    border-bottom: 1px solid #464646;
+    font-family: Helvetica;
+    color: #464646;
+}
+
+.parcours h3 {
+    width: 100%;
+    border-bottom: 1px solid #464646;
+    font-family: Helvetica;
+    color: #464646;
+    margin-bottom: 0;
+}
+
+.parcours h3 .sous_titre {
+    font-size: 0.9em;
+    color: #969696;
+    font-family: Calibri;
+    padding-left: 10px;
+}
+
+p.tech_tags {
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+span.tech_tag {
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 3px;
+    color: black;
+}
+
+.travail .tech_tag {
+    background: rgb(211, 231, 255);
+}
+
+.projet .tech_tag {
+    background: rgb(212, 255, 187);
+}
+
+
+.cv_subtitre {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    background: #f5f5f5;
+    padding: 5px;
+}
+
+.cv_subtitre .photo {
+    margin-right: 20px;
+}
+
+.cv_subtitre .profil {
+    margin: auto 0;
+}
+
+.cv_subtitre .profil p {
+    padding: 0;
+    margin: 0;
+    padding-left: 25px;
+}
+
+.cv_subtitre .profil .nom {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.cv_subtitre .profil .tel {
+    background: url("phone.png") no-repeat left center;
+}
+
+.cv_subtitre .profil .email {
+    background: url("mail.png") no-repeat left center;
+}
+
+.photo img {
+    width: 80px;
+    border-radius: 40px;
+}
