@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Portfolio - Thomas Leroy</title>
+    <link>http://lordsk.github.io/portfolio/tags/</link>
+    <description>Recent content in Tags on Portfolio - Thomas Leroy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Jan 2019 21:19:59 +0100</lastBuildDate>
+    
+	<atom:link href="http://lordsk.github.io/portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>3d</title>
+      <link>http://lordsk.github.io/portfolio/tags/3d/</link>
+      <pubDate>Tue, 08 Jan 2019 21:19:59 +0100</pubDate>
+      
+      <guid>http://lordsk.github.io/portfolio/tags/3d/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bgfx</title>
+      <link>http://lordsk.github.io/portfolio/tags/bgfx/</link>
+      <pubDate>Tue, 08 Jan 2019 21:19:59 +0100</pubDate>
+      
+      <guid>http://lordsk.github.io/portfolio/tags/bgfx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blender</title>
+      <link>http://lordsk.github.io/portfolio/tags/blender/</link>
+      <pubDate>Tue, 08 Jan 2019 21:19:59 +0100</pubDate>
+      
+      <guid>http://lordsk.github.io/portfolio/tags/blender/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43;</title>
+      <link>http://lordsk.github.io/portfolio/tags/c&#43;&#43;/</link>
+      <pubDate>Wed, 16 Jan 2019 14:09:05 +0100</pubDate>
+      
+      <guid>http://lordsk.github.io/portfolio/tags/c&#43;&#43;/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Genetic Algorithm</title>
+      <link>http://lordsk.github.io/portfolio/tags/genetic-algorithm/</link>
+      <pubDate>Tue, 15 Jan 2019 19:48:11 +0100</pubDate>
+      
+      <guid>http://lordsk.github.io/portfolio/tags/genetic-algorithm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ida</title>
+      <link>http://lordsk.github.io/portfolio/tags/ida/</link>
+      <pubDate>Tue, 08 Jan 2019 15:42:55 +0100</pubDate>
+      
+      <guid>http://lordsk.github.io/portfolio/tags/ida/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Imgui</title>
+      <link>http://lordsk.github.io/portfolio/tags/imgui/</link>
+      <pubDate>Tue, 08 Jan 2019 21:19:50 +0100</pubDate>
+      
+      <guid>http://lordsk.github.io/portfolio/tags/imgui/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine Learning</title>
+      <link>http://lordsk.github.io/portfolio/tags/machine-learning/</link>
+      <pubDate>Tue, 15 Jan 2019 19:48:11 +0100</pubDate>
+      
+      <guid>http://lordsk.github.io/portfolio/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multi Threading</title>
+      <link>http://lordsk.github.io/portfolio/tags/multi-threading/</link>
+      <pubDate>Tue, 08 Jan 2019 21:19:59 +0100</pubDate>
+      
+      <guid>http://lordsk.github.io/portfolio/tags/multi-threading/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Neural Network</title>
+      <link>http://lordsk.github.io/portfolio/tags/neural-network/</link>
+      <pubDate>Tue, 15 Jan 2019 19:48:11 +0100</pubDate>
+      
+      <guid>http://lordsk.github.io/portfolio/tags/neural-network/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Old Projects</title>
+      <link>http://lordsk.github.io/portfolio/tags/old-projects/</link>
+      <pubDate>Tue, 16 Jan 2018 19:48:48 +0100</pubDate>
+      
+      <guid>http://lordsk.github.io/portfolio/tags/old-projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Open Source</title>
+      <link>http://lordsk.github.io/portfolio/tags/open-source/</link>
+      <pubDate>Wed, 16 Jan 2019 14:09:05 +0100</pubDate>
+      
+      <guid>http://lordsk.github.io/portfolio/tags/open-source/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Opengl</title>
+      <link>http://lordsk.github.io/portfolio/tags/opengl/</link>
+      <pubDate>Wed, 16 Jan 2019 14:09:05 +0100</pubDate>
+      
+      <guid>http://lordsk.github.io/portfolio/tags/opengl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reverse Engineering</title>
+      <link>http://lordsk.github.io/portfolio/tags/reverse-engineering/</link>
+      <pubDate>Tue, 08 Jan 2019 21:19:50 +0100</pubDate>
+      
+      <guid>http://lordsk.github.io/portfolio/tags/reverse-engineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>X64dbg</title>
+      <link>http://lordsk.github.io/portfolio/tags/x64dbg/</link>
+      <pubDate>Tue, 08 Jan 2019 15:42:55 +0100</pubDate>
+      
+      <guid>http://lordsk.github.io/portfolio/tags/x64dbg/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

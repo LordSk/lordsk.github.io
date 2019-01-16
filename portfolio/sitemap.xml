@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://lordsk.github.io/portfolio/post/teeworlds/</loc>
+    <lastmod>2019-01-16T14:09:05+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://lordsk.github.io/portfolio/post/burds/</loc>
+    <lastmod>2019-01-15T19:48:11+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://lordsk.github.io/portfolio/post/triangle/</loc>
+    <lastmod>2019-01-08T21:19:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://lordsk.github.io/portfolio/post/0xed/</loc>
+    <lastmod>2019-01-08T21:19:50+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://lordsk.github.io/portfolio/post/resacred/</loc>
+    <lastmod>2019-01-08T15:42:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://lordsk.github.io/portfolio/post/misc/</loc>
+    <lastmod>2018-01-16T19:48:48+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://lordsk.github.io/portfolio/tags/3d/</loc>
+    <lastmod>2019-01-08T21:19:59+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lordsk.github.io/portfolio/tags/bgfx/</loc>
+    <lastmod>2019-01-08T21:19:59+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lordsk.github.io/portfolio/tags/blender/</loc>
+    <lastmod>2019-01-08T21:19:59+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lordsk.github.io/portfolio/tags/c&#43;&#43;/</loc>
+    <lastmod>2019-01-16T14:09:05+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lordsk.github.io/portfolio/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lordsk.github.io/portfolio/tags/genetic-algorithm/</loc>
+    <lastmod>2019-01-15T19:48:11+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lordsk.github.io/portfolio/tags/ida/</loc>
+    <lastmod>2019-01-08T15:42:55+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lordsk.github.io/portfolio/tags/imgui/</loc>
+    <lastmod>2019-01-08T21:19:50+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lordsk.github.io/portfolio/tags/machine-learning/</loc>
+    <lastmod>2019-01-15T19:48:11+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lordsk.github.io/portfolio/tags/multi-threading/</loc>
+    <lastmod>2019-01-08T21:19:59+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lordsk.github.io/portfolio/tags/neural-network/</loc>
+    <lastmod>2019-01-15T19:48:11+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lordsk.github.io/portfolio/tags/old-projects/</loc>
+    <lastmod>2018-01-16T19:48:48+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lordsk.github.io/portfolio/tags/open-source/</loc>
+    <lastmod>2019-01-16T14:09:05+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lordsk.github.io/portfolio/tags/opengl/</loc>
+    <lastmod>2019-01-16T14:09:05+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lordsk.github.io/portfolio/</loc>
+    <lastmod>2019-01-16T14:09:05+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lordsk.github.io/portfolio/post/</loc>
+    <lastmod>2019-01-16T14:09:05+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lordsk.github.io/portfolio/tags/reverse-engineering/</loc>
+    <lastmod>2019-01-08T21:19:50+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lordsk.github.io/portfolio/tags/</loc>
+    <lastmod>2019-01-08T21:19:59+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lordsk.github.io/portfolio/tags/x64dbg/</loc>
+    <lastmod>2019-01-08T15:42:55+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

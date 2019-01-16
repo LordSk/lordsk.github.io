@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C&#43;&#43; on Portfolio - Thomas Leroy</title>
+    <link>http://lordsk.github.io/portfolio/tags/c&#43;&#43;/</link>
+    <description>Recent content in C&#43;&#43; on Portfolio - Thomas Leroy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 16 Jan 2019 14:09:05 +0100</lastBuildDate>
+    
+	<atom:link href="http://lordsk.github.io/portfolio/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Teeworlds</title>
+      <link>http://lordsk.github.io/portfolio/post/teeworlds/</link>
+      <pubDate>Wed, 16 Jan 2019 14:09:05 +0100</pubDate>
+      
+      <guid>http://lordsk.github.io/portfolio/post/teeworlds/</guid>
+      <description>Teeworlds is 2D multiplayer open source game (available on Steam). Its development started around 10 years ago, I joined the main team recently to keep the work going. We released a new version (0.7.2) after years of hiatus. I&amp;rsquo;m currently working on remaking the editor from scratch (see below).
+
+Album Progress album of the new editor</description>
+    </item>
+    
+    <item>
+      <title>Burds</title>
+      <link>http://lordsk.github.io/portfolio/post/burds/</link>
+      <pubDate>Tue, 15 Jan 2019 19:48:11 +0100</pubDate>
+      
+      <guid>http://lordsk.github.io/portfolio/post/burds/</guid>
+      <description>Burds is my first attempt at using machine learning to make AI. This involved implementing feed forward neural networks and reccurrent neural networks from scratch, but also developping a genetic algorithm to train these networks, as well a choosing the right network achitecture. The final result is a mix from several research papers, adding my own contributions to fit the project.
+
+
+  Demonstration video</description>
+    </item>
+    
+    <item>
+      <title>Triangle</title>
+      <link>http://lordsk.github.io/portfolio/post/triangle/</link>
+      <pubDate>Tue, 08 Jan 2019 21:19:59 +0100</pubDate>
+      
+      <guid>http://lordsk.github.io/portfolio/post/triangle/</guid>
+      <description>Project Triangle is a shoot-them-up concept developped to explore and learn 3D rendering techniques, using bgfx (A Cross-platform, graphics API agnostic, &amp;ldquo;Bring Your Own Engine/Framework&amp;rdquo; style rendering library). A deferred rendering stack was developped from scratch, including shadow mapping, normal mapping, emissive textures, point and directionnal lights, and HDR. A meta programmed Entity Component System was also put it place, allowing easy and flexible gameplay iterations, as well as instant updating in game.</description>
+    </item>
+    
+    <item>
+      <title>0xed</title>
+      <link>http://lordsk.github.io/portfolio/post/0xed/</link>
+      <pubDate>Tue, 08 Jan 2019 21:19:50 +0100</pubDate>
+      
+      <guid>http://lordsk.github.io/portfolio/post/0xed/</guid>
+      <description>0xed is an hexadecimal editor. View data interpreted as common types such as ASCII, Integer and Float.
+Setup as many panels as you want, each with its own color gradient and data type.
+Inspect selected byte string with the Inspector panel, Search for any type of data with the search command.
+0xed is currently being worked on and thus is not recommended for professional use as of now.
+
+Album Progress album</description>
+    </item>
+    
+    <item>
+      <title>Resacred</title>
+      <link>http://lordsk.github.io/portfolio/post/resacred/</link>
+      <pubDate>Tue, 08 Jan 2019 15:42:55 +0100</pubDate>
+      
+      <guid>http://lordsk.github.io/portfolio/post/resacred/</guid>
+      <description>Resacred is a complete remake of Sacred Gold.
+First we start by reverse-engineering the game from the executable binary and binary resource files, using tools such as x64dbg, IDA Pro, and 0xed.
+We then use that information to build a modern engine suited for the game. In particular, DirectX 7 was used at the time to render the game, we now use an asynchronous OpenGL renderer.
+After months of work we can display every map sector, as well as the world overview grid.</description>
+    </item>
+    
+    <item>
+      <title>Miscellaneous</title>
+      <link>http://lordsk.github.io/portfolio/post/misc/</link>
+      <pubDate>Tue, 16 Jan 2018 19:48:48 +0100</pubDate>
+      
+      <guid>http://lordsk.github.io/portfolio/post/misc/</guid>
+      <description>   
+  
+
+  
+
+  
+  
+  </description>
+    </item>
+    
+  </channel>
+</rss>

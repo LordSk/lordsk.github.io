@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Multi Threading on Portfolio - Thomas Leroy</title>
+    <link>http://lordsk.github.io/portfolio/tags/multi-threading/</link>
+    <description>Recent content in Multi Threading on Portfolio - Thomas Leroy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Jan 2019 21:19:59 +0100</lastBuildDate>
+    
+	<atom:link href="http://lordsk.github.io/portfolio/tags/multi-threading/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Triangle</title>
+      <link>http://lordsk.github.io/portfolio/post/triangle/</link>
+      <pubDate>Tue, 08 Jan 2019 21:19:59 +0100</pubDate>
+      
+      <guid>http://lordsk.github.io/portfolio/post/triangle/</guid>
+      <description>Project Triangle is a shoot-them-up concept developped to explore and learn 3D rendering techniques, using bgfx (A Cross-platform, graphics API agnostic, &amp;ldquo;Bring Your Own Engine/Framework&amp;rdquo; style rendering library). A deferred rendering stack was developped from scratch, including shadow mapping, normal mapping, emissive textures, point and directionnal lights, and HDR. A meta programmed Entity Component System was also put it place, allowing easy and flexible gameplay iterations, as well as instant updating in game.</description>
+    </item>
+    
+    <item>
+      <title>Resacred</title>
+      <link>http://lordsk.github.io/portfolio/post/resacred/</link>
+      <pubDate>Tue, 08 Jan 2019 15:42:55 +0100</pubDate>
+      
+      <guid>http://lordsk.github.io/portfolio/post/resacred/</guid>
+      <description>Resacred is a complete remake of Sacred Gold.
+First we start by reverse-engineering the game from the executable binary and binary resource files, using tools such as x64dbg, IDA Pro, and 0xed.
+We then use that information to build a modern engine suited for the game. In particular, DirectX 7 was used at the time to render the game, we now use an asynchronous OpenGL renderer.
+After months of work we can display every map sector, as well as the world overview grid.</description>
+    </item>
+    
+  </channel>
+</rss>

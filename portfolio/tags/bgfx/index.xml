@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bgfx on Portfolio - Thomas Leroy</title>
+    <link>http://lordsk.github.io/portfolio/tags/bgfx/</link>
+    <description>Recent content in Bgfx on Portfolio - Thomas Leroy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Jan 2019 21:19:59 +0100</lastBuildDate>
+    
+	<atom:link href="http://lordsk.github.io/portfolio/tags/bgfx/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Triangle</title>
+      <link>http://lordsk.github.io/portfolio/post/triangle/</link>
+      <pubDate>Tue, 08 Jan 2019 21:19:59 +0100</pubDate>
+      
+      <guid>http://lordsk.github.io/portfolio/post/triangle/</guid>
+      <description>Project Triangle is a shoot-them-up concept developped to explore and learn 3D rendering techniques, using bgfx (A Cross-platform, graphics API agnostic, &amp;ldquo;Bring Your Own Engine/Framework&amp;rdquo; style rendering library). A deferred rendering stack was developped from scratch, including shadow mapping, normal mapping, emissive textures, point and directionnal lights, and HDR. A meta programmed Entity Component System was also put it place, allowing easy and flexible gameplay iterations, as well as instant updating in game.</description>
+    </item>
+    
+  </channel>
+</rss>

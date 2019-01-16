@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Imgui on Portfolio - Thomas Leroy</title>
+    <link>http://lordsk.github.io/portfolio/tags/imgui/</link>
+    <description>Recent content in Imgui on Portfolio - Thomas Leroy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Jan 2019 21:19:50 +0100</lastBuildDate>
+    
+	<atom:link href="http://lordsk.github.io/portfolio/tags/imgui/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>0xed</title>
+      <link>http://lordsk.github.io/portfolio/post/0xed/</link>
+      <pubDate>Tue, 08 Jan 2019 21:19:50 +0100</pubDate>
+      
+      <guid>http://lordsk.github.io/portfolio/post/0xed/</guid>
+      <description>0xed is an hexadecimal editor. View data interpreted as common types such as ASCII, Integer and Float.
+Setup as many panels as you want, each with its own color gradient and data type.
+Inspect selected byte string with the Inspector panel, Search for any type of data with the search command.
+0xed is currently being worked on and thus is not recommended for professional use as of now.
+
+Album Progress album</description>
+    </item>
+    
+    <item>
+      <title>Miscellaneous</title>
+      <link>http://lordsk.github.io/portfolio/post/misc/</link>
+      <pubDate>Tue, 16 Jan 2018 19:48:48 +0100</pubDate>
+      
+      <guid>http://lordsk.github.io/portfolio/post/misc/</guid>
+      <description>   
+  
+
+  
+
+  
+  
+  </description>
+    </item>
+    
+  </channel>
+</rss>

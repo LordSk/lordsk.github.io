@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine Learning on Portfolio - Thomas Leroy</title>
+    <link>http://lordsk.github.io/portfolio/tags/machine-learning/</link>
+    <description>Recent content in Machine Learning on Portfolio - Thomas Leroy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 15 Jan 2019 19:48:11 +0100</lastBuildDate>
+    
+	<atom:link href="http://lordsk.github.io/portfolio/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Burds</title>
+      <link>http://lordsk.github.io/portfolio/post/burds/</link>
+      <pubDate>Tue, 15 Jan 2019 19:48:11 +0100</pubDate>
+      
+      <guid>http://lordsk.github.io/portfolio/post/burds/</guid>
+      <description>Burds is my first attempt at using machine learning to make AI. This involved implementing feed forward neural networks and reccurrent neural networks from scratch, but also developping a genetic algorithm to train these networks, as well a choosing the right network achitecture. The final result is a mix from several research papers, adding my own contributions to fit the project.
+
+
+  Demonstration video</description>
+    </item>
+    
+  </channel>
+</rss>
