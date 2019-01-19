@@ -1,5 +1,10 @@
 /* */
 
+html {
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
 @font-face {
     font-family: adam;
     src: url('ADAM.CG PRO.otf');
@@ -34,6 +39,11 @@ canvas {
     list-style-type: none;
     margin: 0;
     padding: 10px;
+}
+
+
+.topBar li {
+    margin: 0;
 }
 
 .topBar a, .topBar a:visited {
@@ -114,6 +124,8 @@ a#mail:hover {
     padding: 0;
     font-size: 3em;
     font-family: adam;
+    font-weight: bold;
+    color: #000;
 }
 
 .textBlue {
@@ -166,16 +178,14 @@ a#mail:hover {
 }
 
 .blockDev {
-    display: flex;
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto !important;
     border-radius: 15px;
     overflow: hidden;
     font-family: 'europa', sans-serif;
 }
 
 .devWeb {
-    flex: 50%;
     background: #0534a5;
     color: #fff;
     padding-bottom: 30px;
@@ -183,7 +193,6 @@ a#mail:hover {
 }
 
 .devNative {
-    flex: 50%;
     background: #fff;
     color: #161c32;
     padding-bottom: 30px;

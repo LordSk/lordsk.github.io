@@ -99,7 +99,7 @@ let shipList = [];
 let smokeParticleList = [];
 
 let radius = rand(500.0, 1000.0);
-let planet = spawnPlanet(rand(-1000.0, 1000.0), -radius * 0.5, radius, rand(-3.0, 3.0),
+let planet = spawnPlanet(rand(-1000.0, 1000.0), -radius * 0.25, radius, rand(-3.0, 3.0),
                 rand(4.0, 8.0), rand(2, 6));
 
 let timeClock = new THREE.Clock();
