@@ -1,7 +1,7 @@
 // LordSk 2018
 
 const rdrWidth = window.innerWidth;
-const rdrHeight = 400;
+const rdrHeight = 800;
 
 let scene = new THREE.Scene();
 scene.background = new THREE.Color(0xffffff);
