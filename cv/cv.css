@@ -1510,3 +1510,7 @@ div.header div.right {
     padding-left: 15px;
     max-height: 188px;
 }
+
+img#portrait {
+    border-radius: 200px;
+}
